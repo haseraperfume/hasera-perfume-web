@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SiteNav from "./SiteNav";
 
 const products = [
   {
@@ -45,13 +46,7 @@ export default function Home() {
             <div className="header-cta"><a className="button whatsapp" href="#shop">◉ WhatsApp</a><a className="button orange" href="#shop">♧ Shopee</a><a className="button outline" href="#shop">♪ TikTok</a></div>
           </div>
         </div>
-        <header className="nav wrap">
-          <a className="wordmark" href="#home" aria-label="Hasera home">HASERA</a>
-          <nav className="nav-links" aria-label="Primary navigation">
-            <a href="#collection">Home</a><a href="#collection">Collection</a><a href="#story">Our story</a><a href="#ingredients">Ingredients</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a>
-          </nav>
-          <a className="button button-dark nav-button" href="#collection">Shop now</a>
-        </header>
+        <SiteNav />
         <div className="hero-copy wrap">
           <p className="eyebrow">Crafted to be remembered</p>
           <h1>Not just<br />perfume.<br /><em>A signature.</em></h1>
@@ -120,7 +115,6 @@ export default function Home() {
             <p>&ldquo;Croesus Gold smells powerful and luxurious. It&apos;s my go-to for special occasions.&rdquo;</p><small>S***** P.</small>
           </article>
         </div>
-        <div className="dots">●　○　○　○</div>
       </section>
 
       <section className="cta" id="shop">
