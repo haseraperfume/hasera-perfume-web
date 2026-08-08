@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "title": "HASERA — Bukan sekadar parfum, tapi sebuah signature",
+    "description": "Temukan parfum signature HASERA: Cleopatra Noir, Georgia Flora, dan Croesus Gold."
+  },
+  "nav": {
+    "home": "Beranda",
+    "collection": "Koleksi",
+    "story": "Cerita kami",
+    "ingredients": "Bahan",
+    "reviews": "Ulasan",
+    "faq": "FAQ",
+    "shopNow": "Belanja sekarang",
+    "toggleMenu": "Buka menu",
+    "skipToContent": "Langsung ke konten"
+  },
+  "topbar": {
+    "label": "Siap jadikan ini milikmu?",
+    "whatsapp": "WhatsApp",
+    "shopee": "Shopee",
+    "tiktok": "TikTok"
+  },
+  "hero": {
+    "eyebrow": "Diciptakan untuk dikenang",
+    "titleLine1": "Bukan sekadar",
+    "titleLine2": "parfum.",
+    "titleEm": "Ini signature.",
+    "lede": "HASERA lebih dari sekadar wewangian.<br />Ia adalah pelindung tak kasat mata<br />yang kamu kenakan setiap hari.",
+    "cta": "Lihat koleksi"
+  },
+  "collection": {
+    "eyebrow": "Koleksi kami",
+    "title": "Tiga signature. Tiga cerita.",
+    "explore": "Lihat",
+    "products": {
+      "cleopatra-noir": {
+        "mood": "Berani. Menggoda. Elegan.",
+        "description": "Signature dari kekuatanmu."
+      },
+      "georgia-flora": {
+        "mood": "Feminin. Cerah. Memikat.",
+        "description": "Ekspresi floral dari keanggunan abadi."
+      },
+      "croesus-gold": {
+        "mood": "Berani. Magnetis. Penuh kemenangan.",
+        "description": "Signature dari kepercayaan diri dan kesuksesan."
+      }
+    }
+  },
+  "values": [
+    { "title": "Bahan premium", "text": "Bahan baku terbaik dari seluruh dunia." },
+    { "title": "Diracik dengan ahli", "text": "Diramu dengan presisi, disempurnakan dengan passion." },
+    { "title": "Unik & berkesan", "text": "Aroma yang meninggalkan kesan mendalam ke mana pun kamu pergi." },
+    { "title": "Dibuat dengan peduli", "text": "Cruelty-free, bersumber etis, dan diproduksi secara bertanggung jawab." }
+  ],
+  "story": {
+    "eyebrow": "Kenapa Hasera",
+    "title": "Setiap detail,<br />setiap emosi.",
+    "body": "Kami percaya parfum adalah pernyataan pribadi. Setiap tetes dirancang untuk mengangkat kehadiranmu dan menjadi bagian dari identitasmu.",
+    "stats": [
+      { "value": "20+", "label": "Bahan<br />premium" },
+      { "value": "3", "label": "Aroma<br />signature" },
+      { "value": "12", "label": "Jam<br />tahan lama" },
+      { "value": "100%", "label": "Dibuat<br />dengan cinta" }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "Disukai banyak orang",
+    "title": "Signature mereka. Cerita mereka.",
+    "ratingLabel": "5 dari 5 bintang",
+    "items": [
+      { "quote": "Cleopatra Noir bikin aku pede setiap hari. Aromanya berani, seksi, dan tahan lama seharian.", "author": "P**** M." },
+      { "quote": "Georgia Flora feminin dan elegan banget. Selalu dapat pujian tiap kali pakai.", "author": "F****** S." },
+      { "quote": "Croesus Gold aromanya kuat dan mewah. Andalan aku untuk acara spesial.", "author": "S***** P." }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Temukan signature-mu",
+    "title": "Siap jadikan ini milikmu?",
+    "body": "Pilih aroma signature-mu dan<br />biarkan HASERA jadi bagian dari cerita kamu.",
+    "whatsapp": "Chat via WhatsApp",
+    "shopee": "Beli di Shopee",
+    "tiktok": "Beli di TikTok Shop",
+    "whatsappMessage": "Halo, Saya ingin bertanya tentang parfum Hasera"
+  },
+  "faq": {
+    "eyebrow": "Perlu diketahui",
+    "title": "Pertanyaan yang sering diajukan",
+    "items": [
+      { "q": "Apakah parfum HASERA original dan asli?", "a": "Ya. Setiap botol diracik dan disegel langsung oleh HASERA — bukan hasil jual ulang stok pihak ketiga." },
+      { "q": "Berapa lama aromanya bertahan?", "a": "Racikan signature kami dirancang untuk tahan hingga 12 jam di kulit." },
+      { "q": "Di mana saya bisa membeli HASERA?", "a": "Kamu bisa pesan langsung via WhatsApp, atau belanja di toko resmi Shopee dan TikTok Shop kami." },
+      { "q": "Apakah pengiriman ke seluruh Indonesia?", "a": "Ya, kami mengirim ke seluruh Indonesia melalui mitra Shopee dan TikTok Shop." },
+      { "q": "Apakah produk kalian cruelty-free?", "a": "Ya. Semua parfum HASERA cruelty-free dan bersumber secara etis." }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "whatsapp": "WhatsApp"
+    },
+    "copyright": "© 2024 HASERA. Hak Cipta Dilindungi."
+  }
+}

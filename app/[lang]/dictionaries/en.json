@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "title": "HASERA — A signature, not just perfume",
+    "description": "Discover HASERA signature fragrances: Cleopatra Noir, Georgia Flora and Croesus Gold."
+  },
+  "nav": {
+    "home": "Home",
+    "collection": "Collection",
+    "story": "Our story",
+    "ingredients": "Ingredients",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "shopNow": "Shop now",
+    "toggleMenu": "Toggle menu",
+    "skipToContent": "Skip to content"
+  },
+  "topbar": {
+    "label": "Ready to make it yours?",
+    "whatsapp": "WhatsApp",
+    "shopee": "Shopee",
+    "tiktok": "TikTok"
+  },
+  "hero": {
+    "eyebrow": "Crafted to be remembered",
+    "titleLine1": "Not just",
+    "titleLine2": "perfume.",
+    "titleEm": "A signature.",
+    "lede": "HASERA is more than a fragrance.<br />It's the invisible armor you wear<br />every single day.",
+    "cta": "Discover collection"
+  },
+  "collection": {
+    "eyebrow": "Our collection",
+    "title": "Three signatures. Three stories.",
+    "explore": "Explore",
+    "products": {
+      "cleopatra-noir": {
+        "mood": "Bold. Seductive. Elegant.",
+        "description": "A signature of your power."
+      },
+      "georgia-flora": {
+        "mood": "Feminine. Radiant. Enchanting.",
+        "description": "A floral expression of timeless elegance."
+      },
+      "croesus-gold": {
+        "mood": "Bold. Magnetic. Victorious.",
+        "description": "A signature of confidence and success."
+      }
+    }
+  },
+  "values": [
+    { "title": "Premium ingredients", "text": "The finest raw materials from around the world." },
+    { "title": "Masterfully crafted", "text": "Blended with precision, perfected with passion." },
+    { "title": "Unique & memorable", "text": "Scents that leave a lasting impression everywhere you go." },
+    { "title": "Made with care", "text": "Cruelty-free, ethically sourced, and crafted responsibly." }
+  ],
+  "story": {
+    "eyebrow": "Why Hasera",
+    "title": "Every detail,<br />every emotion.",
+    "body": "We believe perfume is a personal statement. Every drop is designed to elevate your presence and become a part of your identity.",
+    "stats": [
+      { "value": "20+", "label": "Premium<br />ingredients" },
+      { "value": "3", "label": "Signature<br />scents" },
+      { "value": "12", "label": "Hours<br />lasting" },
+      { "value": "100%", "label": "Made<br />with love" }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "Loved by many",
+    "title": "Their signature. Their story.",
+    "ratingLabel": "5 out of 5 stars",
+    "items": [
+      { "quote": "Cleopatra Noir is my everyday confidence. It's bold, sexy, and lasts all day.", "author": "P**** M." },
+      { "quote": "Georgia Flora is so feminine and elegant. I get compliments every time I wear it.", "author": "F****** S." },
+      { "quote": "Croesus Gold smells powerful and luxurious. It's my go-to for special occasions.", "author": "S***** P." }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Find your signature",
+    "title": "Ready to make it yours?",
+    "body": "Choose your signature fragrance and<br />let HASERA become a part of your story.",
+    "whatsapp": "Chat via WhatsApp",
+    "shopee": "Buy on Shopee",
+    "tiktok": "Buy on TikTok Shop",
+    "whatsappMessage": "Hi, I'd like to ask about HASERA perfume."
+  },
+  "faq": {
+    "eyebrow": "Good to know",
+    "title": "Frequently asked questions",
+    "items": [
+      { "q": "Are HASERA perfumes original and authentic?", "a": "Yes. Every bottle is crafted and sealed by HASERA — no reselling of third-party stock." },
+      { "q": "How long does the scent last?", "a": "Our signature blends are designed to last up to 12 hours on skin." },
+      { "q": "Where can I buy HASERA?", "a": "You can order directly via WhatsApp, or shop our official Shopee and TikTok Shop storefronts." },
+      { "q": "Do you ship nationwide?", "a": "Yes, we ship across Indonesia through our Shopee and TikTok Shop partners." },
+      { "q": "Are your products cruelty-free?", "a": "Yes. All HASERA fragrances are cruelty-free and ethically sourced." }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "whatsapp": "WhatsApp"
+    },
+    "copyright": "© 2024 HASERA. All Rights Reserved."
+  }
+}
