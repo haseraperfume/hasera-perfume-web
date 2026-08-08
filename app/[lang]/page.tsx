@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import SiteNav from "./SiteNav";
+import CtaLink from "./CtaLink";
 import { getDictionary, hasLocale } from "./dictionaries";
 
 const SHOPEE_URL = "https://shopee.co.id/haseraperfume";
@@ -39,9 +40,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <div className="wrap topbar-inner">
             <span className="header-cta-label">{dict.topbar.label}</span>
             <div className="header-cta">
-              <a className="button whatsapp" href={waHref} target="_blank" rel="noopener noreferrer"><span aria-hidden="true">◉</span> {dict.topbar.whatsapp}</a>
-              <a className="button orange" href={SHOPEE_URL} target="_blank" rel="noopener noreferrer"><span aria-hidden="true">♧</span> {dict.topbar.shopee}</a>
-              <a className="button outline" href={TIKTOK_URL} target="_blank" rel="noopener noreferrer"><span aria-hidden="true">♪</span> {dict.topbar.tiktok}</a>
+              <CtaLink className="button whatsapp" href={waHref} channel="whatsapp" location="topbar"><span aria-hidden="true">◉</span> {dict.topbar.whatsapp}</CtaLink>
+              <CtaLink className="button orange" href={SHOPEE_URL} channel="shopee" location="topbar"><span aria-hidden="true">♧</span> {dict.topbar.shopee}</CtaLink>
+              <CtaLink className="button outline" href={TIKTOK_URL} channel="tiktok" location="topbar"><span aria-hidden="true">♪</span> {dict.topbar.tiktok}</CtaLink>
             </div>
           </div>
         </div>
@@ -126,9 +127,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             <p dangerouslySetInnerHTML={{ __html: dict.cta.body }} />
           </div>
           <div className="cta-buttons">
-            <a className="button whatsapp" href={waHref} target="_blank" rel="noopener noreferrer"><span aria-hidden="true">◉</span>&nbsp;{dict.cta.whatsapp}</a>
-            <a className="button orange" href={SHOPEE_URL} target="_blank" rel="noopener noreferrer"><span aria-hidden="true">♧</span>&nbsp;{dict.cta.shopee}</a>
-            <a className="button outline" href={TIKTOK_URL} target="_blank" rel="noopener noreferrer"><span aria-hidden="true">♪</span>&nbsp;{dict.cta.tiktok}</a>
+            <CtaLink className="button whatsapp" href={waHref} channel="whatsapp" location="cta_section"><span aria-hidden="true">◉</span>&nbsp;{dict.cta.whatsapp}</CtaLink>
+            <CtaLink className="button orange" href={SHOPEE_URL} channel="shopee" location="cta_section"><span aria-hidden="true">♧</span>&nbsp;{dict.cta.shopee}</CtaLink>
+            <CtaLink className="button outline" href={TIKTOK_URL} channel="tiktok" location="cta_section"><span aria-hidden="true">♪</span>&nbsp;{dict.cta.tiktok}</CtaLink>
           </div>
         </div>
       </section>
@@ -158,9 +159,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             <a href="#faq">{dict.nav.faq}</a>
           </nav>
           <div className="socials">
-            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={dict.footer.socials.instagram}><span aria-hidden="true">◎</span></a>
-            <a href={TIKTOK_URL} target="_blank" rel="noopener noreferrer" aria-label={dict.footer.socials.tiktok}><span aria-hidden="true">♪</span></a>
-            <a href={waHref} target="_blank" rel="noopener noreferrer" aria-label={dict.footer.socials.whatsapp}><span aria-hidden="true">✉</span></a>
+            <CtaLink href={INSTAGRAM_URL} channel="instagram" location="footer" ariaLabel={dict.footer.socials.instagram}><span aria-hidden="true">◎</span></CtaLink>
+            <CtaLink href={TIKTOK_URL} channel="tiktok" location="footer" ariaLabel={dict.footer.socials.tiktok}><span aria-hidden="true">♪</span></CtaLink>
+            <CtaLink href={waHref} channel="whatsapp" location="footer" ariaLabel={dict.footer.socials.whatsapp}><span aria-hidden="true">✉</span></CtaLink>
           </div>
         </div>
         <div className="wrap copyright">{dict.footer.copyright}</div>

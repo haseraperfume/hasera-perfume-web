@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "../globals.css";
 import { getDictionary, hasLocale, locales } from "./dictionaries";
 import { notFound } from "next/navigation";
+import { GA_MEASUREMENT_ID } from "@/lib/gtag";
 
 export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -28,7 +30,26 @@ export default async function RootLayout({
 
   return (
     <html lang={lang} className="h-full antialiased">
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        {GA_MEASUREMENT_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="gtag-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_MEASUREMENT_ID}');
+                window.gtag = gtag;
+              `}
+            </Script>
+          </>
+        )}
+      </body>
     </html>
   );
 }
