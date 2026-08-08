@@ -9,20 +9,22 @@ export default function CtaLink({
   location,
   children,
   ariaLabel,
+  external = true,
 }: {
   href: string;
   className?: string;
-  channel: "whatsapp" | "shopee" | "tiktok" | "instagram";
+  channel: "whatsapp" | "shopee" | "tiktok" | "instagram" | "website";
   location: string;
   children: React.ReactNode;
   ariaLabel?: string;
+  external?: boolean;
 }) {
   return (
     <a
       className={className}
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
       aria-label={ariaLabel}
       onClick={() =>
         trackEvent("cta_click", { channel, location })

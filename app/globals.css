@@ -15,6 +15,7 @@
   --text-on-dark-muted: #ddd0c2;
   --brand-whatsapp: #1da947;
   --brand-shopee: #eb4b25;
+  --brand-instagram: #8134af;
 }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
@@ -29,11 +30,14 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline:2px so
 @media (prefers-reduced-motion:reduce) { .hero-image { display:none; } }
 .hero-wash { position:absolute; inset:0; background:linear-gradient(90deg, rgba(247,242,236,.78) 0%,rgba(247,242,236,.32) 35%,transparent 66%); z-index:1; }
 .nav { position:relative; z-index:10; display:flex; align-items:center; justify-content:space-between; padding-top:24px; gap:16px; }
-.wordmark { border:2px solid var(--ink); padding:3px 8px 2px; font-size:20px; letter-spacing:8px; font-weight:700; line-height:1; }
+.wordmark { display:inline-flex; line-height:1; }
+.wordmark img { display:block; }
 .nav-links { display:flex; gap:34px; font-size:12px; text-transform:uppercase; letter-spacing:.02em; }
 .nav-links a:hover, footer a:hover { opacity:.58; }
 .button { display:inline-flex; align-items:center; justify-content:center; gap:20px; padding:14px 22px; text-transform:uppercase; font-size:12px; letter-spacing:.04em; font-weight:700; transition:transform .2s,opacity .2s; }
 .button:hover { transform:translateY(-2px); opacity:.86; }
+.button:has(.btn-icon) { gap:8px; }
+.btn-icon { border-radius:50%; flex-shrink:0; }
 .button-dark { background:var(--ink-900); color:white; }
 .nav-button { padding:11px 23px; border-radius:3px; }
 .nav-actions { display:flex; align-items:center; gap:12px; }
@@ -117,10 +121,10 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline:2px so
 .outline { border:1px solid var(--gold-soft); background:transparent; }
 .footer { background:var(--ink-900); color:#f5ece4; padding:21px 0 10px; }
 .footer-top { display:flex; align-items:center; justify-content:space-between; gap:16px; }
-.wordmark.light { border-color:#f5ece4; letter-spacing:7px; }
 .footer nav { display:flex; gap:29px; font-size:12px; text-transform:uppercase; flex-wrap:wrap; }
 .socials { display:flex; align-items:center; gap:16px; font-size:18px; }
 .socials a:hover { opacity:.7; }
+.socials .btn-icon { display:block; }
 .copyright { text-align:center; margin-top:15px; padding-top:10px; border-top:1px solid var(--line-dark); font-size:12px; color:var(--text-on-dark-muted); }
 
 @media (max-width:1024px) {
@@ -163,3 +167,16 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline:2px so
   .footer nav { order:3; width:100%; justify-content:space-between; gap:8px; font-size:10px; }
   .socials { margin-left:auto; }
 }
+
+.linktree { min-height:100vh; display:flex; align-items:center; justify-content:center; padding:48px 20px; background:linear-gradient(180deg, rgba(23,21,18,.55), rgba(23,21,18,.75)), center/cover no-repeat url('/images/generated/hasera-linktree-cleopatra-noir.webp'); }
+.linktree-inner { width:min(420px, 100%); text-align:center; }
+.linktree-wordmark { display:inline-block; }
+.linktree-tagline { margin:16px 0 28px; font-size:13px; letter-spacing:.03em; color:var(--tone-gold); text-transform:uppercase; }
+.linktree-list { display:flex; flex-direction:column; gap:14px; }
+.linktree-btn { display:flex; align-items:center; justify-content:center; gap:10px; padding:16px 22px; text-transform:uppercase; font-size:13px; letter-spacing:.05em; font-weight:700; border-radius:6px; transition:transform .2s,opacity .2s; }
+.linktree-btn:hover { transform:translateY(-2px); opacity:.86; }
+.linktree-btn.official { background:#fff; color:var(--ink-900); border:2px solid var(--ink-900); }
+.linktree-btn.shopee { background:var(--brand-shopee); color:#fff; }
+.linktree-btn.tiktok { background:var(--ink-900); color:#fff; }
+.linktree-btn.instagram { background:var(--brand-instagram); color:#fff; }
+.linktree-btn.whatsapp { background:var(--brand-whatsapp); color:#fff; }

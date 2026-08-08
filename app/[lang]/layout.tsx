@@ -18,6 +18,12 @@ export async function generateMetadata({
   return {
     title: dict.meta.title,
     description: dict.meta.description,
+    icons: {
+      icon: [
+        { url: "/images/hasera/hasera-perfume.svg", type: "image/svg+xml" },
+        { url: "/favicon.ico" },
+      ],
+    },
   };
 }
 

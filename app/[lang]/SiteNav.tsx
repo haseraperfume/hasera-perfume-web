@@ -33,7 +33,9 @@ export default function SiteNav({
 
   return (
     <header className="nav wrap">
-      <a className="wordmark" href="#home" aria-label="Hasera home">HASERA</a>
+      <a className="wordmark" href="#home" aria-label="Hasera home">
+        <img src="/images/hasera/hasera-perfume.svg" alt="Hasera" width={140} height={23} />
+      </a>
       <nav className="nav-links" aria-label="Primary navigation">
         {links.map(([href, label]) => (
           <a href={href} key={href}>{label}</a>

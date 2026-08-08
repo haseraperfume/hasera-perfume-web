@@ -3,15 +3,7 @@ import { notFound } from "next/navigation";
 import SiteNav from "./SiteNav";
 import CtaLink from "./CtaLink";
 import { getDictionary, hasLocale } from "./dictionaries";
-
-const SHOPEE_URL = "https://shopee.co.id/haseraperfume";
-const TIKTOK_URL = "https://www.tiktok.com/@haseraperfume";
-const INSTAGRAM_URL = "https://www.instagram.com/haseraperfume";
-const WHATSAPP_NUMBER = "6281263119830";
-
-function whatsappUrl(message: string) {
-  return `https://api.whatsapp.com/send/?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
-}
+import { SHOPEE_URL, TIKTOK_URL, INSTAGRAM_URL, whatsappUrl, SOCIAL_ICON } from "./constants";
 
 const products = [
   { key: "cleopatra-noir", name: "Cleopatra Noir", image: "/images/generated/hasera-cleopatra-noir-card.webp", tone: "plum" },
@@ -19,7 +11,7 @@ const products = [
   { key: "croesus-gold", name: "Croesus Gold", image: "/images/generated/hasera-croesus-gold-card.webp", tone: "gold" },
 ] as const;
 
-const valueIcons = ["◌", "♧", "◇", "♡"];
+const valueIcons = ["♤", "♧", "♢", "♡"];
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
@@ -40,9 +32,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <div className="wrap topbar-inner">
             <span className="header-cta-label">{dict.topbar.label}</span>
             <div className="header-cta">
-              <CtaLink className="button whatsapp" href={waHref} channel="whatsapp" location="topbar"><span aria-hidden="true">◉</span> {dict.topbar.whatsapp}</CtaLink>
-              <CtaLink className="button orange" href={SHOPEE_URL} channel="shopee" location="topbar"><span aria-hidden="true">♧</span> {dict.topbar.shopee}</CtaLink>
-              <CtaLink className="button outline" href={TIKTOK_URL} channel="tiktok" location="topbar"><span aria-hidden="true">♪</span> {dict.topbar.tiktok}</CtaLink>
+              <CtaLink className="button whatsapp" href={waHref} channel="whatsapp" location="topbar"><Image className="btn-icon" src={SOCIAL_ICON.whatsapp} alt="" width={18} height={18} />{dict.topbar.whatsapp}</CtaLink>
+              <CtaLink className="button orange" href={SHOPEE_URL} channel="shopee" location="topbar"><Image className="btn-icon" src={SOCIAL_ICON.shopee} alt="" width={18} height={18} />{dict.topbar.shopee}</CtaLink>
+              <CtaLink className="button outline" href={TIKTOK_URL} channel="tiktok" location="topbar"><Image className="btn-icon" src={SOCIAL_ICON.tiktok} alt="" width={18} height={18} />{dict.topbar.tiktok}</CtaLink>
             </div>
           </div>
         </div>
@@ -127,9 +119,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             <p dangerouslySetInnerHTML={{ __html: dict.cta.body }} />
           </div>
           <div className="cta-buttons">
-            <CtaLink className="button whatsapp" href={waHref} channel="whatsapp" location="cta_section"><span aria-hidden="true">◉</span>&nbsp;{dict.cta.whatsapp}</CtaLink>
-            <CtaLink className="button orange" href={SHOPEE_URL} channel="shopee" location="cta_section"><span aria-hidden="true">♧</span>&nbsp;{dict.cta.shopee}</CtaLink>
-            <CtaLink className="button outline" href={TIKTOK_URL} channel="tiktok" location="cta_section"><span aria-hidden="true">♪</span>&nbsp;{dict.cta.tiktok}</CtaLink>
+            <CtaLink className="button whatsapp" href={waHref} channel="whatsapp" location="cta_section"><Image className="btn-icon" src={SOCIAL_ICON.whatsapp} alt="" width={22} height={22} />{dict.cta.whatsapp}</CtaLink>
+            <CtaLink className="button orange" href={SHOPEE_URL} channel="shopee" location="cta_section"><Image className="btn-icon" src={SOCIAL_ICON.shopee} alt="" width={22} height={22} />{dict.cta.shopee}</CtaLink>
+            <CtaLink className="button outline" href={TIKTOK_URL} channel="tiktok" location="cta_section"><Image className="btn-icon" src={SOCIAL_ICON.tiktok} alt="" width={22} height={22} />{dict.cta.tiktok}</CtaLink>
           </div>
         </div>
       </section>
@@ -149,7 +141,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
 
       <footer className="footer">
         <div className="wrap footer-top">
-          <a className="wordmark light" href="#home">HASERA</a>
+          <a className="wordmark light" href="#home">
+            <img src="/images/hasera/hasera-perfume.svg" alt="Hasera" width={150} height={25} />
+          </a>
           <nav aria-label="Footer navigation">
             <a href="#home">{dict.nav.home}</a>
             <a href="#collection">{dict.nav.collection}</a>
@@ -159,9 +153,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             <a href="#faq">{dict.nav.faq}</a>
           </nav>
           <div className="socials">
-            <CtaLink href={INSTAGRAM_URL} channel="instagram" location="footer" ariaLabel={dict.footer.socials.instagram}><span aria-hidden="true">◎</span></CtaLink>
-            <CtaLink href={TIKTOK_URL} channel="tiktok" location="footer" ariaLabel={dict.footer.socials.tiktok}><span aria-hidden="true">♪</span></CtaLink>
-            <CtaLink href={waHref} channel="whatsapp" location="footer" ariaLabel={dict.footer.socials.whatsapp}><span aria-hidden="true">✉</span></CtaLink>
+            <CtaLink href={INSTAGRAM_URL} channel="instagram" location="footer" ariaLabel={dict.footer.socials.instagram}><Image className="btn-icon" src={SOCIAL_ICON.instagram} alt="" width={26} height={26} /></CtaLink>
+            <CtaLink href={TIKTOK_URL} channel="tiktok" location="footer" ariaLabel={dict.footer.socials.tiktok}><Image className="btn-icon" src={SOCIAL_ICON.tiktok} alt="" width={26} height={26} /></CtaLink>
+            <CtaLink href={waHref} channel="whatsapp" location="footer" ariaLabel={dict.footer.socials.whatsapp}><Image className="btn-icon" src={SOCIAL_ICON.whatsapp} alt="" width={26} height={26} /></CtaLink>
           </div>
         </div>
         <div className="wrap copyright">{dict.footer.copyright}</div>
