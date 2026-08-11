@@ -1,0 +1,122 @@
+#!/bin/sh
+#
+# Release branch guard.
+#
+# Fires only when pushing a `release/x.y.z` branch. Everything else passes
+# straight through, so day-to-day feature pushes are untouched.
+#
+# Checks, against the commit actually being pushed (not the working tree, so a
+# forgotten `git add` cannot slip past):
+#   1. package.json version matches the branch name
+#   2. .RELEASE_NOTES/<version>.md exists and is committed
+#   3. that file's heading names the same version
+#
+# Bypass in an emergency with: git push --no-verify
+#
+# Installed via core.hooksPath, set by the `prepare` script in package.json.
+
+set -eu
+
+RED=''
+YELLOW=''
+RESET=''
+if [ -t 2 ]; then
+  RED=$(printf '\033[31m')
+  YELLOW=$(printf '\033[33m')
+  RESET=$(printf '\033[0m')
+fi
+
+fail() {
+  printf '%spre-push blocked:%s %s\n' "$RED" "$RESET" "$1" >&2
+}
+
+# Reads the version out of a package.json supplied on stdin. Prefers node,
+# which every contributor here already has, and falls back to sed so the hook
+# still works in a bare shell.
+read_pkg_version() {
+  if command -v node >/dev/null 2>&1; then
+    node -e 'let d="";process.stdin.on("data",c=>d+=c).on("end",()=>{try{process.stdout.write(JSON.parse(d).version||"")}catch(e){}})'
+  else
+    sed -n 's/^[[:space:]]*"version"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' | head -1
+  fi
+}
+
+status=0
+
+# stdin lines: <local ref> <local sha> <remote ref> <remote sha>
+while read -r local_ref local_sha remote_ref remote_sha; do
+  [ -n "${local_ref:-}" ] || continue
+
+  # Branch deletion pushes an all-zero local sha. Nothing to validate.
+  case "$local_sha" in
+    *[!0]*) ;;
+    *) continue ;;
+  esac
+
+  # Validate against the destination branch name, since you can push a local
+  # branch to a differently named remote ref.
+  branch=${remote_ref#refs/heads/}
+  [ "$branch" != "$remote_ref" ] || continue
+
+  case "$branch" in
+    release/*) ;;
+    *) continue ;;
+  esac
+
+  version=${branch#release/}
+  if [ -z "$version" ]; then
+    fail "branch '$branch' has no version after 'release/'."
+    status=1
+    continue
+  fi
+
+  printf '%schecking release %s%s\n' "$YELLOW" "$version" "$RESET" >&2
+
+  # 1. package.json version, as it exists in the pushed commit.
+  pkg_json=$(git show "$local_sha:package.json" 2>/dev/null) || {
+    fail "package.json not found in the commit being pushed."
+    status=1
+    continue
+  }
+  pkg_version=$(printf '%s' "$pkg_json" | read_pkg_version)
+
+  if [ -z "$pkg_version" ]; then
+    fail "could not read a version out of package.json."
+    status=1
+  elif [ "$pkg_version" != "$version" ]; then
+    fail "version mismatch. Branch says '$version', package.json says '$pkg_version'."
+    printf '  Fix: set \"version\": \"%s\" in package.json, then commit.\n' "$version" >&2
+    status=1
+  fi
+
+  # 2. Release note must be committed, not merely present on disk.
+  note=".RELEASE_NOTES/$version.md"
+  if ! git cat-file -e "$local_sha:$note" 2>/dev/null; then
+    if [ -f "$note" ]; then
+      fail "$note exists locally but is not committed, so it would not be pushed."
+      printf '  Fix: git add %s && git commit\n' "$note" >&2
+    else
+      fail "$note is missing."
+      printf '  Fix: copy .RELEASE_NOTES/.TEMPLATES.MD to %s and fill it in.\n' "$note" >&2
+    fi
+    status=1
+    continue
+  fi
+
+  # 3. Heading should name the same version, which catches a copy-pasted note.
+  heading=$(git show "$local_sha:$note" 2>/dev/null | head -1)
+  case "$heading" in
+    "# $version"*) ;;
+    *)
+      fail "$note heading does not start with '# $version'."
+      printf '  Found: %s\n' "$heading" >&2
+      status=1
+      ;;
+  esac
+done
+
+if [ "$status" -ne 0 ]; then
+  printf '\nPush aborted. Use --no-verify to override.\n' >&2
+fi
+
+exit "$status"
