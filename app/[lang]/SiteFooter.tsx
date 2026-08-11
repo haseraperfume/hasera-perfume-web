@@ -40,6 +40,8 @@ export default function SiteFooter({
         </div>
       </div>
       <nav className="wrap footer-legal" aria-label={dict.footer.legalNavigation}>
+        {/* Guides are Indonesian only, so the link only exists on /id. */}
+        {lang === "id" && <a href={`/${lang}/panduan`}>{dict.footer.guides}</a>}
         <a href={`/${lang}/tentang-kami`}>{dict.footer.about}</a>
         <a href={`/${lang}/pengiriman-pengembalian`}>{dict.footer.shipping}</a>
         <a href={`/${lang}/kebijakan-privasi`}>{dict.footer.privacy}</a>

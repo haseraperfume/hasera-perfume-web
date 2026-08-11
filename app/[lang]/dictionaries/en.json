@@ -118,11 +118,11 @@
     "eyebrow": "Good to know",
     "title": "Frequently asked questions",
     "items": [
-      { "q": "Are HASERA perfumes original and authentic?", "a": "Yes. Every bottle is crafted and sealed by HASERA, with no reselling of third-party stock." },
-      { "q": "How long does the scent last?", "a": "Typically 6-8 hours on skin, depending on your skin type and activity. On fabric it can hold up to 12 hours." },
-      { "q": "Where can I buy HASERA?", "a": "You can order directly via WhatsApp, or shop our official Shopee and TikTok Shop storefronts." },
-      { "q": "Do you ship nationwide?", "a": "Yes, we ship across Indonesia through our Shopee and TikTok Shop partners." },
-      { "q": "Are your products cruelty-free?", "a": "Yes. All HASERA fragrances are cruelty-free and ethically sourced." }
+      { "q": "Are HASERA perfumes original and authentic?", "a": "Yes, HASERA perfumes are original. Every bottle is blended and sealed by HASERA in Indonesia rather than resold from third-party stock. Because we blend in-house, we can account for exactly what is in the bottle that reaches you." },
+      { "q": "How long does HASERA perfume last?", "a": "HASERA perfume lasts 6-8 hours on skin, depending on your skin type and activity. On fabric it can hold up to 12 hours, because cloth fibres release fragrance more slowly than skin does. Dry skin typically holds scent for less time than oily skin." },
+      { "q": "Where can I buy HASERA perfume?", "a": "HASERA perfume is sold through three official channels: direct message on WhatsApp, our official Shopee store, and our official TikTok Shop store. We do not sell through resellers, so buy from one of those three to be sure of what you receive." },
+      { "q": "Does HASERA ship across Indonesia?", "a": "HASERA ships across Indonesia through Shopee and TikTok Shop courier partners. Delivery estimates, shipping costs and tracking numbers follow whichever marketplace you ordered from, so the parcel can be tracked directly in that app." },
+      { "q": "Are HASERA perfumes cruelty-free?", "a": "Yes, every HASERA fragrance is cruelty-free. We do not test on animals, and our raw materials are ethically sourced from suppliers held to the same standard. This applies across the whole collection, not just selected scents." }
     ]
   },
   "pages": {
@@ -298,11 +298,11 @@
         "Wear it on the days you do not intend to be forgotten."
       ],
       "faq": [
-        { "q": "Who is Cleopatra Noir for?", "a": "For anyone who likes a warm, sweet scent with real character. It reads feminine without being overly sweet, so it works day to day as well as at night." },
-        { "q": "When is Cleopatra Noir best worn?", "a": "It peaks in the evening: dinners, special occasions, dates. For daytime, one or two sprays is plenty." },
-        { "q": "How long does Cleopatra Noir last?", "a": "Typically 6-8 hours on skin, varying with skin type and activity. On fabric it can hold up to 12 hours." },
-        { "q": "How is it different from Georgia Flora?", "a": "Cleopatra Noir is warmer and more oriental, led by lavender and vanilla. Georgia Flora is fresher and more floral, led by rose and fruit. Cleopatra for bold, Georgia for graceful." },
-        { "q": "Does it work in hot weather?", "a": "Yes, with a lighter hand. Heat opens sweet notes faster, so two sprays is more than enough." }
+        { "q": "Who is Cleopatra Noir for?", "a": "Cleopatra Noir suits anyone who likes a warm, sweet scent with real character. It reads feminine without being overly sweet, so it works day to day as well as for evenings out. Best for people who want to be remembered rather than merely noticed." },
+        { "q": "When is Cleopatra Noir best worn?", "a": "Cleopatra Noir peaks in the late afternoon and evening: dinners, special occasions, dates. Its lavender and vanilla read warmer as the temperature drops. For daytime, one or two sprays is enough to keep it from feeling heavy." },
+        { "q": "How long does Cleopatra Noir last on skin?", "a": "Cleopatra Noir lasts 6-8 hours on skin, depending on skin type and activity. On fabric it can hold up to 12 hours. Its vanilla, musk and cedarwood base is the part that lingers longest." },
+        { "q": "How is Cleopatra Noir different from Georgia Flora?", "a": "Cleopatra Noir is warmer and more oriental, led by lavender and vanilla, while Georgia Flora is fresher and more floral, led by rose and fruit. Cleopatra Noir reads bold and suits evenings; Georgia Flora reads graceful and suits daytime." },
+        { "q": "Does Cleopatra Noir work in hot weather?", "a": "Cleopatra Noir works in Indonesian heat as long as you go lightly. High temperatures open sweet notes faster and push them further, so two sprays is more than enough. Apply to pulse points rather than clothing so it does not build up." }
       ]
     },
     "georgia-flora": {
@@ -323,11 +323,11 @@
         "For workdays, for weddings, for ordinary days you would like to feel less ordinary."
       ],
       "faq": [
-        { "q": "Who is Georgia Flora for?", "a": "For anyone who likes fresh florals that are not too heavy. It suits daily wear, especially if you are still looking for your signature scent." },
-        { "q": "When is Georgia Flora best worn?", "a": "Excellent for morning and daytime: the office, campus, outdoor events. It still works at night for a softer impression." },
-        { "q": "Is it too sweet?", "a": "No. The sweetness comes from lychee up front, then rose and musk balance it out. The result reads clean and fresh rather than sugary." },
-        { "q": "How long does Georgia Flora last?", "a": "Typically 6-8 hours on skin, and up to 12 hours on fabric. Spray on pulse points such as wrists and neck to get the most from it." },
-        { "q": "Is it a good gift?", "a": "Very much so. Florals are the safest choice for a gift because they appeal broadly and are not tied to a narrow taste." }
+        { "q": "Who is Georgia Flora for?", "a": "Georgia Flora suits anyone who likes fresh florals that are not too heavy. It is an easy scent for daily wear, especially if you are still working out which fragrance family you prefer." },
+        { "q": "When is Georgia Flora best worn?", "a": "Georgia Flora is best worn in the morning and through the day: the office, campus, outdoor events. Its lychee and rose read freshest while the air is still light. It still works at night for a softer impression." },
+        { "q": "Is Georgia Flora too sweet?", "a": "Georgia Flora is not overly sweet. The sweetness comes from lychee in the opening, then rose and white musk balance it in the heart. The result reads clean and fresh rather than sugary, so it is safe for enclosed rooms." },
+        { "q": "How long does Georgia Flora last on skin?", "a": "Georgia Flora lasts 6-8 hours on skin and up to 12 hours on fabric. Spray on pulse points such as wrists and neck to get the most from it. Do not rub after spraying, as rubbing makes the scent fade faster." },
+        { "q": "Is Georgia Flora a good gift?", "a": "Georgia Flora is the safest gift choice in the HASERA collection. Florals appeal broadly and do not demand a specific taste, so there is little risk if you do not know the recipient's fragrance preferences." }
       ]
     },
     "croesus-gold": {
@@ -348,11 +348,11 @@
         "Wear it when you need to be the most certain version of yourself. The interview, the pitch, the night that decides something. Croesus Gold does not turn you into someone else. It sharpens who you already are."
       ],
       "faq": [
-        { "q": "Is Croesus Gold for men or women?", "a": "Unisex, though its sweet-warm character over amber and cedarwood means men choose it most often. Women who love gourmand scents wear it just as well." },
-        { "q": "When is Croesus Gold best worn?", "a": "Strongest at night and for occasions that matter. In hot daytime weather, drop to one or two sprays." },
-        { "q": "How strong is it?", "a": "Strong, and easily noticed by people nearby. If you prefer something soft and close to the skin, Georgia Flora is the better fit." },
-        { "q": "How long does Croesus Gold last?", "a": "Typically 6-8 hours on skin, and up to 12 hours on fabric. Its amber and cedarwood base gives it the longest dry-down in our collection." },
-        { "q": "Can I wear it to the office?", "a": "Yes, with a lighter hand. One spray is enough in an air-conditioned room so it does not overwhelm the people around you." }
+        { "q": "Is Croesus Gold for men or women?", "a": "Croesus Gold is a unisex fragrance, though its sweet-warm character over amber and cedarwood means men choose it most often. Women who enjoy gourmand scents wear it just as well, since its sweetness leans warm rather than floral." },
+        { "q": "When is Croesus Gold best worn?", "a": "Croesus Gold is strongest at night and for occasions that matter, such as a pitch or an interview. Its amber and cedarwood base reads deeper as the temperature drops. In hot daytime weather, drop to one or two sprays." },
+        { "q": "How strong is Croesus Gold?", "a": "Croesus Gold is a strong fragrance and is easily noticed by people nearby. It projects further than the other two HASERA scents. If you prefer something soft that stays close to the skin, Georgia Flora is the better fit." },
+        { "q": "How long does Croesus Gold last on skin?", "a": "Croesus Gold lasts 6-8 hours on skin and up to 12 hours on fabric. Its amber and cedarwood base gives it the longest dry-down in the HASERA collection. That is also what makes it feel strongest in the first few hours." },
+        { "q": "Can I wear Croesus Gold to the office?", "a": "Croesus Gold can be worn to the office with a lighter hand. One spray is enough in an air-conditioned room so it does not overwhelm the people around you. In an open-plan or crowded office, Georgia Flora is the safer choice." }
       ]
     }
   },
@@ -363,6 +363,8 @@
       "whatsapp": "WhatsApp"
     },
     "legalNavigation": "Information navigation",
+    "guides": "Perfume guides",
+    "updatedPrefix": "Updated",
     "about": "About us",
     "shipping": "Shipping & returns",
     "privacy": "Privacy policy",

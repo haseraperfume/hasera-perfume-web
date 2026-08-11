@@ -33,6 +33,23 @@ export function alternatesFor(lang: Locale, path = "") {
   };
 }
 
+/**
+ * For pages that exist in the default locale only (the /panduan guides).
+ * Emitting hreflang that points at a 404 is worse than emitting none, so this
+ * returns a bare self-canonical with no `languages` map.
+ */
+export function canonicalDefaultLocaleOnly(path = "") {
+  return { canonical: absoluteUrl(localePath(defaultLocale, path)) };
+}
+
+/**
+ * Last meaningful content change for pages whose copy lives in the
+ * dictionaries. Bump by hand when you edit that copy. Deliberately NOT a build
+ * timestamp: a lastmod that always says "now" is a signal Google learns to
+ * ignore.
+ */
+export const CONTENT_UPDATED = "2026-08-11";
+
 /** OG locale codes, keyed by our short locale. */
 export const OG_LOCALE: Record<Locale, string> = {
   id: "id_ID",

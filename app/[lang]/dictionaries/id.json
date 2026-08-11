@@ -118,11 +118,11 @@
     "eyebrow": "Perlu diketahui",
     "title": "Pertanyaan yang sering diajukan",
     "items": [
-      { "q": "Apakah parfum HASERA original dan asli?", "a": "Ya. Setiap botol diracik dan disegel langsung oleh HASERA, bukan hasil jual ulang stok pihak ketiga." },
-      { "q": "Berapa lama aromanya bertahan?", "a": "Di kulit biasanya 6-8 jam, tergantung jenis kulit dan aktivitas kamu. Di pakaian aromanya bisa bertahan hingga 12 jam." },
-      { "q": "Di mana saya bisa membeli HASERA?", "a": "Kamu bisa pesan langsung via WhatsApp, atau belanja di toko resmi Shopee dan TikTok Shop kami." },
-      { "q": "Apakah pengiriman ke seluruh Indonesia?", "a": "Ya, kami mengirim ke seluruh Indonesia melalui mitra Shopee dan TikTok Shop." },
-      { "q": "Apakah produk kalian cruelty-free?", "a": "Ya. Semua parfum HASERA cruelty-free dan bersumber secara etis." }
+      { "q": "Apakah parfum HASERA original dan asli?", "a": "Ya, parfum HASERA original dan asli. Setiap botol diracik dan disegel langsung oleh HASERA di Indonesia, bukan hasil jual ulang stok pihak ketiga. Karena kami meracik sendiri, kami bisa memastikan isi setiap botol yang sampai ke tangan kamu." },
+      { "q": "Berapa lama parfum HASERA bertahan?", "a": "Parfum HASERA bertahan 6-8 jam di kulit, tergantung jenis kulit dan aktivitas kamu. Di pakaian aromanya bisa bertahan hingga 12 jam karena serat kain melepas wangi lebih lambat daripada kulit. Kulit kering biasanya menahan aroma lebih sebentar dibanding kulit berminyak." },
+      { "q": "Di mana saya bisa membeli parfum HASERA?", "a": "Parfum HASERA dijual lewat tiga jalur resmi: chat langsung via WhatsApp, toko resmi kami di Shopee, dan toko resmi kami di TikTok Shop. Kami tidak menjual lewat reseller, jadi pastikan kamu membeli dari salah satu jalur tersebut." },
+      { "q": "Apakah HASERA mengirim ke seluruh Indonesia?", "a": "HASERA mengirim ke seluruh Indonesia melalui mitra ekspedisi Shopee dan TikTok Shop. Estimasi waktu, ongkos kirim, dan nomor resi mengikuti sistem marketplace tempat kamu memesan, jadi paket bisa dilacak langsung dari aplikasinya." },
+      { "q": "Apakah parfum HASERA cruelty-free?", "a": "Ya, semua parfum HASERA cruelty-free. Kami tidak menguji produk pada hewan, dan bahan baku kami bersumber secara etis dari pemasok yang menerapkan standar yang sama. Ini berlaku untuk seluruh koleksi, bukan hanya sebagian aroma." }
     ]
   },
   "pages": {
@@ -298,11 +298,11 @@
         "Pakai di hari saat kamu tidak mau jadi orang yang gampang dilupakan."
       ],
       "faq": [
-        { "q": "Cleopatra Noir cocok untuk siapa?", "a": "Untuk kamu yang suka aroma manis-hangat dengan karakter kuat. Aromanya feminin tapi tidak manis berlebihan, jadi tetap nyaman dipakai sehari-hari maupun ke acara malam." },
-        { "q": "Kapan waktu terbaik memakai Cleopatra Noir?", "a": "Paling maksimal untuk sore dan malam: dinner, acara spesial, atau kencan. Untuk siang hari, cukup semprot satu sampai dua kali saja." },
-        { "q": "Berapa lama Cleopatra Noir bertahan di kulit?", "a": "Di kulit biasanya 6-8 jam, tergantung jenis kulit dan aktivitas kamu. Di pakaian bisa bertahan hingga 12 jam." },
-        { "q": "Apa bedanya Cleopatra Noir dengan Georgia Flora?", "a": "Cleopatra Noir lebih hangat dan oriental dengan lavender dan vanilla. Georgia Flora lebih segar dan floral dengan mawar dan buah-buahan. Cleopatra untuk kesan berani, Georgia untuk kesan anggun." },
-        { "q": "Apakah cocok untuk cuaca panas Indonesia?", "a": "Cocok, asal takarannya pas. Di cuaca panas aroma manis terbuka lebih cepat, jadi dua semprotan sudah lebih dari cukup." }
+        { "q": "Cleopatra Noir cocok untuk siapa?", "a": "Cleopatra Noir cocok untuk kamu yang suka aroma manis-hangat dengan karakter kuat. Aromanya feminin tapi tidak manis berlebihan, jadi nyaman dipakai sehari-hari maupun ke acara malam. Paling pas untuk yang ingin wangi yang diingat orang, bukan yang cuma lewat." },
+        { "q": "Kapan waktu terbaik memakai Cleopatra Noir?", "a": "Cleopatra Noir paling maksimal dipakai sore dan malam: dinner, acara spesial, atau kencan. Lavender dan vanilla di dalamnya terasa lebih hangat saat suhu turun. Untuk siang hari, cukup satu sampai dua semprotan saja agar tidak terasa terlalu berat." },
+        { "q": "Berapa lama Cleopatra Noir bertahan di kulit?", "a": "Cleopatra Noir bertahan 6-8 jam di kulit, tergantung jenis kulit dan aktivitas kamu. Di pakaian aromanya bisa bertahan hingga 12 jam. Dasar vanilla, musk, dan cedarwood-nya adalah bagian yang paling lama menempel." },
+        { "q": "Apa bedanya Cleopatra Noir dengan Georgia Flora?", "a": "Cleopatra Noir lebih hangat dan oriental dengan lavender dan vanilla, sedangkan Georgia Flora lebih segar dan floral dengan mawar dan buah-buahan. Cleopatra Noir memberi kesan berani dan cocok untuk malam; Georgia Flora memberi kesan anggun dan ringan untuk siang." },
+        { "q": "Apakah Cleopatra Noir cocok untuk cuaca panas Indonesia?", "a": "Cleopatra Noir cocok untuk cuaca panas Indonesia asal takarannya pas. Di suhu tinggi, aroma manis terbuka lebih cepat dan tercium lebih kuat, jadi dua semprotan sudah lebih dari cukup. Semprot di titik nadi, bukan di baju, agar aromanya tidak menumpuk." }
       ]
     },
     "georgia-flora": {
@@ -323,11 +323,11 @@
         "Untuk hari kerja, untuk kondangan, untuk hari biasa yang ingin kamu buat terasa tidak biasa."
       ],
       "faq": [
-        { "q": "Georgia Flora cocok untuk siapa?", "a": "Untuk kamu yang suka aroma floral segar dan tidak terlalu berat. Cocok untuk pemakaian harian, terutama kalau kamu baru mulai mencari parfum signature." },
-        { "q": "Kapan waktu terbaik memakai Georgia Flora?", "a": "Sangat cocok untuk pagi dan siang: ke kantor, kuliah, atau acara outdoor. Tetap enak dipakai malam untuk kesan yang lebih lembut." },
-        { "q": "Apakah aromanya terlalu manis?", "a": "Tidak. Manisnya datang dari lychee di awal, lalu diseimbangkan mawar dan musk. Hasil akhirnya lebih ke bersih dan segar daripada manis." },
-        { "q": "Berapa lama Georgia Flora bertahan di kulit?", "a": "Di kulit biasanya 6-8 jam, dan di pakaian bisa sampai 12 jam. Semprot di titik nadi seperti pergelangan tangan dan leher agar lebih awet." },
-        { "q": "Cocok untuk hadiah?", "a": "Sangat cocok. Aroma floral adalah pilihan paling aman untuk kado karena disukai banyak orang dan tidak terlalu spesifik seleranya." }
+        { "q": "Georgia Flora cocok untuk siapa?", "a": "Georgia Flora cocok untuk kamu yang suka aroma floral segar dan tidak terlalu berat. Aromanya ramah untuk pemakaian harian, terutama kalau kamu baru mulai mencari parfum signature dan belum tahu keluarga aroma apa yang paling kamu suka." },
+        { "q": "Kapan waktu terbaik memakai Georgia Flora?", "a": "Georgia Flora paling cocok dipakai pagi dan siang: ke kantor, kuliah, atau acara outdoor. Lychee dan mawar di dalamnya terasa paling segar saat udara masih ringan. Malam hari tetap enak dipakai untuk kesan yang lebih lembut." },
+        { "q": "Apakah aroma Georgia Flora terlalu manis?", "a": "Georgia Flora tidak terlalu manis. Manisnya datang dari lychee di semprotan pertama, lalu diseimbangkan mawar dan white musk di bagian tengah. Hasil akhirnya lebih terasa bersih dan segar daripada manis, jadi aman dipakai ke ruangan tertutup." },
+        { "q": "Berapa lama Georgia Flora bertahan di kulit?", "a": "Georgia Flora bertahan 6-8 jam di kulit, dan di pakaian bisa sampai 12 jam. Semprot di titik nadi seperti pergelangan tangan dan leher agar lebih awet. Jangan digosok setelah disemprot, karena menggosok justru mempercepat aromanya hilang." },
+        { "q": "Apakah Georgia Flora cocok untuk hadiah?", "a": "Georgia Flora adalah pilihan paling aman untuk hadiah di antara koleksi HASERA. Aroma floral disukai banyak orang dan tidak menuntut selera yang spesifik, jadi risikonya kecil kalau kamu belum tahu preferensi aroma penerimanya." }
       ]
     },
     "croesus-gold": {
@@ -348,11 +348,11 @@
         "Pakai saat kamu perlu jadi versi paling yakin dari dirimu sendiri. Wawancara, presentasi, malam yang menentukan. Croesus Gold tidak mengubah kamu jadi orang lain. Dia mempertegas siapa kamu."
       ],
       "faq": [
-        { "q": "Croesus Gold untuk pria atau wanita?", "a": "Unisex, tapi karakter manis-hangat dengan dasar amber dan cedarwood membuatnya paling sering dipilih pria. Wanita yang suka aroma gourmand juga cocok memakainya." },
-        { "q": "Kapan waktu terbaik memakai Croesus Gold?", "a": "Paling kuat untuk malam dan acara penting. Untuk siang hari di cuaca panas, kurangi jadi satu sampai dua semprotan." },
-        { "q": "Seberapa kuat aromanya?", "a": "Termasuk kuat dan mudah tercium orang di sekitar. Kalau kamu suka aroma yang lembut dan dekat di kulit, Georgia Flora pilihan yang lebih pas." },
-        { "q": "Berapa lama Croesus Gold bertahan di kulit?", "a": "Di kulit biasanya 6-8 jam, dan di pakaian bisa sampai 12 jam. Dasar amber dan cedarwood-nya membuat sisa aromanya bertahan paling lama di antara koleksi kami." },
-        { "q": "Apakah cocok dipakai ke kantor?", "a": "Bisa, dengan takaran yang lebih sedikit. Satu semprotan sudah cukup untuk ruangan ber-AC agar tidak mengganggu orang di sekitarmu." }
+        { "q": "Croesus Gold untuk pria atau wanita?", "a": "Croesus Gold adalah parfum unisex, tapi karakter manis-hangat dengan dasar amber dan cedarwood membuatnya paling sering dipilih pria. Wanita yang suka aroma gourmand juga cocok memakainya, karena manisnya lebih ke arah hangat daripada floral." },
+        { "q": "Kapan waktu terbaik memakai Croesus Gold?", "a": "Croesus Gold paling kuat dipakai malam dan untuk acara penting seperti presentasi atau wawancara. Dasar amber dan cedarwood-nya terasa lebih dalam saat suhu turun. Untuk siang hari di cuaca panas, kurangi jadi satu sampai dua semprotan." },
+        { "q": "Seberapa kuat aroma Croesus Gold?", "a": "Croesus Gold termasuk parfum yang kuat dan mudah tercium orang di sekitar. Aromanya menyebar lebih jauh dibanding dua aroma HASERA lainnya. Kalau kamu lebih suka wangi yang lembut dan menempel dekat di kulit, Georgia Flora pilihan yang lebih pas." },
+        { "q": "Berapa lama Croesus Gold bertahan di kulit?", "a": "Croesus Gold bertahan 6-8 jam di kulit, dan di pakaian bisa sampai 12 jam. Dasar amber dan cedarwood-nya membuat sisa aromanya bertahan paling lama di antara koleksi HASERA. Ini juga yang membuatnya terasa paling kuat di jam-jam pertama." },
+        { "q": "Apakah Croesus Gold cocok dipakai ke kantor?", "a": "Croesus Gold bisa dipakai ke kantor dengan takaran yang lebih sedikit. Satu semprotan sudah cukup untuk ruangan ber-AC agar tidak mengganggu orang di sekitarmu. Kalau kantormu ruangan terbuka atau padat, Georgia Flora pilihan yang lebih aman." }
       ]
     }
   },
@@ -363,6 +363,8 @@
       "whatsapp": "WhatsApp"
     },
     "legalNavigation": "Navigasi informasi",
+    "guides": "Panduan parfum",
+    "updatedPrefix": "Diperbarui",
     "about": "Tentang kami",
     "shipping": "Pengiriman & pengembalian",
     "privacy": "Kebijakan privasi",

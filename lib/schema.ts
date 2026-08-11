@@ -9,7 +9,13 @@ import type { Product } from "./products";
 import { BRAND_NAME, absoluteUrl, localePath } from "./site";
 
 const ORGANIZATION_ID = absoluteUrl("/#organization");
-const WEBSITE_ID = absoluteUrl("/#website");
+
+/**
+ * Locale-scoped: /id and /en emit different WebSite bodies (different url and
+ * inLanguage), so they must not share one @id or the entity graph contradicts
+ * itself.
+ */
+const websiteId = (lang: Locale) => absoluteUrl(`/#website-${lang}`);
 
 /**
  * Tells Google that the bare token "hasera" is this brand. `sameAs` is the
@@ -42,11 +48,68 @@ export function websiteSchema(lang: Locale) {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": WEBSITE_ID,
+    "@id": websiteId(lang),
     name: BRAND_NAME,
     url: absoluteUrl(localePath(lang)),
     inLanguage: lang,
     publisher: { "@id": ORGANIZATION_ID },
+  };
+}
+
+/**
+ * Guides and trust pages. Answer engines weight attributable, dated content,
+ * and the site had neither. `author`/`publisher` reference the Organization
+ * node by @id rather than duplicating it.
+ */
+export function articleSchema({
+  headline,
+  description,
+  path,
+  lang,
+  datePublished,
+  dateModified,
+  image,
+  type = "Article",
+}: {
+  headline: string;
+  description: string;
+  path: string;
+  lang: Locale;
+  datePublished: string;
+  dateModified: string;
+  image?: string;
+  type?: "Article" | "AboutPage" | "ContactPage" | "WebPage";
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": type,
+    headline,
+    name: headline,
+    description,
+    url: absoluteUrl(localePath(lang, path)),
+    inLanguage: lang,
+    datePublished,
+    dateModified,
+    author: { "@id": ORGANIZATION_ID },
+    publisher: { "@id": ORGANIZATION_ID },
+    isPartOf: { "@id": websiteId(lang) },
+    ...(image ? { image: absoluteUrl(image) } : {}),
+  };
+}
+
+export function itemListSchema(
+  items: { name: string; path: string }[],
+  lang: Locale
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      url: absoluteUrl(localePath(lang, item.path)),
+    })),
   };
 }
 
