@@ -181,11 +181,35 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline:2px so
 .linktree-btn.instagram { background:var(--brand-instagram); color:#fff; }
 .linktree-btn.whatsapp { background:var(--brand-whatsapp); color:#fff; }
 
+.visually-hidden { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+
+/* FAQ questions are h3 for heading semantics; strip the default block styling
+   so the accordion still looks like a summary row. */
+.faq-list summary h3 { display:inline; margin:0; font:inherit; }
+
 /* Static content pages */
 .content-body { max-width:720px; padding:8px 0 64px; }
 .content-body h1 { font:400 clamp(32px,4vw,48px)/1.05 Georgia,serif; letter-spacing:-.035em; margin:0; }
 .content-body h2 { font:400 23px Georgia,serif; margin:38px 0 12px; letter-spacing:-.02em; }
 .content-body p { font-size:15px; line-height:1.75; margin:0 0 15px; color:#3b3835; }
+/* The answer block: the passage answer engines lift. Styled to read as the
+   page's lede so it earns its prominence for humans too. */
+.answer-lede { font:400 19px/1.65 Georgia,serif; color:var(--ink); margin:22px 0 18px; }
+.byline { font-size:12px; color:#7a736c; margin:0 0 30px; text-transform:uppercase; letter-spacing:.06em; }
+.content-body h3 { font:700 15px Arial,Helvetica,sans-serif; margin:24px 0 8px; }
+.guide-index { list-style:none; margin:32px 0 0; padding:0; }
+.guide-index li { padding:22px 0; border-top:1px solid var(--line); }
+.guide-index h2 { font:400 23px Georgia,serif; margin:0 0 8px; letter-spacing:-.02em; }
+.guide-index h2 a:hover { color:var(--gold); }
+.guide-index p { font-size:14px; line-height:1.6; margin:0; color:#4a4744; }
+.guide-cta { background:var(--cream-tint); border:1px solid var(--line); border-radius:6px; padding:24px 26px; margin:38px 0; }
+.guide-cta h2 { margin:0 0 8px; font:400 21px Georgia,serif; }
+.guide-cta p { margin:0 0 12px; font-size:14px; }
+.guide-cta a { font-size:12px; text-transform:uppercase; letter-spacing:.08em; border-bottom:1px solid var(--gold); padding-bottom:3px; }
+.guide-related { list-style:none; margin:0; padding:0; }
+.guide-related li { padding:10px 0; border-bottom:1px solid var(--line); font-size:15px; }
+.guide-related a:hover { color:var(--gold); }
+
 .footer-legal { display:flex; flex-wrap:wrap; gap:22px; justify-content:center; margin-top:18px; font-size:11px; text-transform:uppercase; letter-spacing:.05em; }
 .footer-legal a:hover { opacity:.65; }
 
@@ -219,8 +243,9 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline:2px so
 .pdp-buy .dark-outline { color:var(--ink); }
 .pdp-notes { background:var(--cream-tint); border-top:1px solid var(--line); border-bottom:1px solid var(--line); width:100%; max-width:none; padding-left:max(4.5vw,18px); padding-right:max(4.5vw,18px); }
 .pdp-notes-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; max-width:1120px; margin:0 auto; }
-.pdp-notes-grid ul { list-style:none; margin:0; padding:0; }
-.pdp-notes-grid li { font:400 19px Georgia,serif; padding:7px 0; border-bottom:1px solid var(--line); }
+.pdp-notes-grid dt { text-transform:uppercase; letter-spacing:.17em; color:var(--gold); font-size:12px; font-weight:700; margin-bottom:10px; }
+.pdp-notes-grid dd { margin:0; font:400 19px Georgia,serif; line-height:1.5; padding-bottom:7px; border-bottom:1px solid var(--line); }
+.pdp-block-title { font:400 14px/1.2 Arial,Helvetica,sans-serif; text-transform:uppercase; letter-spacing:.14em; color:var(--gold); margin:0 0 12px; }
 .pdp-story { background:var(--ink-900); color:#f5ece4; }
 .pdp-story-inner { padding:56px 0 60px; max-width:720px; }
 .pdp-story h2 { font:400 clamp(28px,3.2vw,40px)/1.08 Georgia,serif; margin:0; letter-spacing:-.03em; }

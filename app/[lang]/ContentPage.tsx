@@ -4,10 +4,16 @@ import { notFound } from "next/navigation";
 import SiteFooter from "./SiteFooter";
 import JsonLd from "@/components/JsonLd";
 import { getDictionary, hasLocale, type Locale } from "./dictionaries";
-import { breadcrumbSchema } from "@/lib/schema";
-import { alternatesFor, localePath } from "@/lib/site";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { CONTENT_UPDATED, alternatesFor, localePath } from "@/lib/site";
 
 type PageKey = "tentang-kami" | "kebijakan-privasi" | "pengiriman-pengembalian";
+
+const SCHEMA_TYPE: Record<PageKey, "AboutPage" | "ContactPage" | "WebPage"> = {
+  "tentang-kami": "AboutPage",
+  "kebijakan-privasi": "WebPage",
+  "pengiriman-pengembalian": "WebPage",
+};
 
 /** Shared metadata builder for the static trust pages. */
 export async function contentMetadata(
@@ -60,6 +66,15 @@ export default async function ContentPage({
         <p className="eyebrow">{page.eyebrow}</p>
         <h1>{page.title}</h1>
         <span className="rule" />
+        <p className="byline">
+          {dict.footer.updatedPrefix}{" "}
+          <time dateTime={CONTENT_UPDATED}>
+            {new Date(CONTENT_UPDATED).toLocaleDateString(
+              lang === "id" ? "id-ID" : "en-GB",
+              { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }
+            )}
+          </time>
+        </p>
         {page.sections.map((section) => (
           <section key={section.heading}>
             <h2>{section.heading}</h2>
@@ -73,13 +88,24 @@ export default async function ContentPage({
       <SiteFooter lang={lang} dict={dict} />
 
       <JsonLd
-        schema={breadcrumbSchema(
-          [
-            { name: dict.pdp.breadcrumbHome, path: "" },
-            { name: page.eyebrow, path: `/${pageKey}` },
-          ],
-          lang
-        )}
+        schema={[
+          articleSchema({
+            headline: page.title,
+            description: page.metaDescription,
+            path: `/${pageKey}`,
+            lang,
+            datePublished: CONTENT_UPDATED,
+            dateModified: CONTENT_UPDATED,
+            type: SCHEMA_TYPE[pageKey],
+          }),
+          breadcrumbSchema(
+            [
+              { name: dict.pdp.breadcrumbHome, path: "" },
+              { name: page.eyebrow, path: `/${pageKey}` },
+            ],
+            lang
+          ),
+        ]}
       />
     </main>
   );

@@ -80,7 +80,8 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <section className="values" aria-label={dict.nav.values}>
+      <section className="values" aria-labelledby="values-heading">
+        <h2 className="visually-hidden" id="values-heading">{dict.nav.values}</h2>
         <div className="wrap values-grid">
           {dict.values.map((value, i) => (
             <div className="value" key={value.title}>
@@ -157,7 +158,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <div className="faq-list">
           {dict.faq.items.map((item) => (
             <details key={item.q}>
-              <summary>{item.q}</summary>
+              <summary><h3>{item.q}</h3></summary>
               <p>{item.a}</p>
             </details>
           ))}

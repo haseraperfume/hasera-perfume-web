@@ -1,15 +1,18 @@
 import type { MetadataRoute } from "next";
 import { locales, defaultLocale } from "./[lang]/dictionaries";
 import { publishedProducts } from "@/lib/products";
-import { absoluteUrl, localePath } from "@/lib/site";
+import { guides, guidesUpdated } from "@/lib/guides";
+import { CONTENT_UPDATED, absoluteUrl, localePath } from "@/lib/site";
 
 /**
- * One entry per locale per page, each carrying the full hreflang set so the
- * sitemap and the <head> tags agree. /links is intentionally excluded, it is
- * a linktree that duplicates homepage links (see robots.ts).
+ * `lastModified` comes from content dates, never from build time. An earlier
+ * version used `new Date()`, which made all URLs claim to change on every
+ * deploy including CSS-only ones, and a lastmod that is always "now" is a
+ * signal Google learns to discount.
  */
-function entry(
+function bilingual(
   path: string,
+  lastModified: string,
   options: Partial<MetadataRoute.Sitemap[number]> = {}
 ): MetadataRoute.Sitemap {
   const languages: Record<string, string> = {};
@@ -20,10 +23,25 @@ function entry(
 
   return locales.map((locale) => ({
     url: absoluteUrl(localePath(locale, path)),
-    lastModified: new Date(),
+    lastModified,
     alternates: { languages },
     ...options,
   }));
+}
+
+/** Guides exist in the default locale only, so they carry no alternates. */
+function idOnly(
+  path: string,
+  lastModified: string,
+  options: Partial<MetadataRoute.Sitemap[number]> = {}
+): MetadataRoute.Sitemap {
+  return [
+    {
+      url: absoluteUrl(localePath(defaultLocale, path)),
+      lastModified,
+      ...options,
+    },
+  ];
 }
 
 const CONTENT_PAGES = [
@@ -34,15 +52,28 @@ const CONTENT_PAGES = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    ...entry("", { changeFrequency: "weekly", priority: 1 }),
+    ...bilingual("", CONTENT_UPDATED, { changeFrequency: "weekly", priority: 1 }),
     ...publishedProducts.flatMap((product) =>
-      entry(`/${product.slug}`, {
+      bilingual(`/${product.slug}`, CONTENT_UPDATED, {
         changeFrequency: "monthly",
         priority: 0.8,
       })
     ),
+    ...idOnly("/panduan", guidesUpdated, {
+      changeFrequency: "monthly",
+      priority: 0.7,
+    }),
+    ...guides.flatMap((guide) =>
+      idOnly(`/panduan/${guide.slug}`, guide.updated, {
+        changeFrequency: "yearly",
+        priority: 0.6,
+      })
+    ),
     ...CONTENT_PAGES.flatMap((path) =>
-      entry(path, { changeFrequency: "yearly", priority: 0.3 })
+      bilingual(path, CONTENT_UPDATED, {
+        changeFrequency: "yearly",
+        priority: 0.3,
+      })
     ),
   ];
 }

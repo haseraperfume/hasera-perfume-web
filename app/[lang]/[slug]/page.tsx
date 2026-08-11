@@ -135,6 +135,7 @@ export default async function ProductPage({
             </s>
           </div>
 
+          <h2 className="pdp-block-title">{pdp.specsTitle}</h2>
           <dl className="pdp-specs">
             {specs.map(([label, value]) => (
               <div key={label}>
@@ -144,6 +145,7 @@ export default async function ProductPage({
             ))}
           </dl>
 
+          <h2 className="pdp-block-title">{pdp.buyTitle}</h2>
           <div className="pdp-buy">
             <CtaLink className="button orange" href={withUtm(SHOPEE_URL, `shopee_pdp_${product.slug}`)} channel="shopee" location="pdp" itemId={product.slug} itemName={product.name}>
               <Image className="btn-icon" src={SOCIAL_ICON.shopee} alt="" width={20} height={20} />{dict.cta.shopee}
@@ -160,18 +162,16 @@ export default async function ProductPage({
 
       <section className="pdp-notes section wrap" aria-labelledby="notes-heading">
         <h2 className="center" id="notes-heading">{pdp.notesTitle}</h2>
-        <div className="pdp-notes-grid">
+        {/* dl, not ul: the tier label has to stay bound to its notes when a
+            parser or answer engine lifts this block out of the page. */}
+        <dl className="pdp-notes-grid">
           {noteGroups.map(([label, notes]) => (
             <div key={label}>
-              <p className="eyebrow">{label}</p>
-              <ul>
-                {notes.map((note) => (
-                  <li key={note}>{note}</li>
-                ))}
-              </ul>
+              <dt>{label}</dt>
+              <dd>{notes.join(", ")}</dd>
             </div>
           ))}
-        </div>
+        </dl>
       </section>
 
       <section className="pdp-story" aria-labelledby="persona-heading">
@@ -190,7 +190,7 @@ export default async function ProductPage({
         <div className="faq-list">
           {detail.faq.map((item) => (
             <details key={item.q}>
-              <summary>{item.q}</summary>
+              <summary><h3>{item.q}</h3></summary>
               <p>{item.a}</p>
             </details>
           ))}
