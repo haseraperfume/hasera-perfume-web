@@ -1,17 +1,19 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { defaultLocale, hasLocale, locales } from "./app/[lang]/dictionaries";
+import { defaultLocale, locales } from "./app/[lang]/dictionaries";
 
-function getLocale(request: NextRequest) {
-  const acceptLanguage = request.headers.get("accept-language") ?? "";
-  const preferred = acceptLanguage.split(",").map((part) => part.split(";")[0].trim().toLowerCase());
-  for (const lang of preferred) {
-    const short = lang.split("-")[0];
-    if (hasLocale(short)) return short;
-  }
-  return defaultLocale;
-}
-
+/**
+ * Every unprefixed path permanently redirects to the default locale (id).
+ *
+ * We deliberately do NOT negotiate Accept-Language. Googlebot crawls mostly
+ * from US IPs with en-US headers, so sniffing made Google treat the English
+ * site as primary while Indonesia is the actual market. Google's own guidance
+ * discourages automatic language redirects for this reason.
+ * See .plans/P-009_seo_audit.md §7.1.
+ *
+ * 308 (not 307) so the redirect is cached as permanent, packaging QR codes
+ * point at unprefixed slugs and must resolve the same way forever.
+ */
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const pathnameHasLocale = locales.some(
@@ -19,11 +21,12 @@ export function proxy(request: NextRequest) {
   );
   if (pathnameHasLocale) return;
 
-  const locale = getLocale(request);
-  request.nextUrl.pathname = `/${locale}${pathname}`;
-  return NextResponse.redirect(request.nextUrl);
+  request.nextUrl.pathname = `/${defaultLocale}${pathname}`;
+  return NextResponse.redirect(request.nextUrl, 308);
 }
 
 export const config = {
-  matcher: ["/((?!_next|api|favicon.ico|images|videos).*)"],
+  matcher: [
+    "/((?!_next|api|favicon.ico|images|videos|robots.txt|sitemap.xml).*)",
+  ],
 };

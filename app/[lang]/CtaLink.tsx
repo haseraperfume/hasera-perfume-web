@@ -1,6 +1,6 @@
 "use client";
 
-import { trackEvent } from "@/lib/gtag";
+import { trackCtaClick } from "@/lib/gtag";
 
 export default function CtaLink({
   href,
@@ -9,14 +9,25 @@ export default function CtaLink({
   location,
   children,
   ariaLabel,
+  itemId,
+  itemName,
   external = true,
 }: {
   href: string;
   className?: string;
-  channel: "whatsapp" | "shopee" | "tiktok" | "instagram" | "website";
+  channel:
+    | "whatsapp"
+    | "shopee"
+    | "tiktok"
+    | "instagram"
+    | "website"
+    | "internal";
   location: string;
   children: React.ReactNode;
   ariaLabel?: string;
+  /** Product slug, when the CTA is tied to a specific fragrance. */
+  itemId?: string;
+  itemName?: string;
   external?: boolean;
 }) {
   return (
@@ -27,7 +38,12 @@ export default function CtaLink({
       rel={external ? "noopener noreferrer" : undefined}
       aria-label={ariaLabel}
       onClick={() =>
-        trackEvent("cta_click", { channel, location })
+        trackCtaClick({
+          channel,
+          location,
+          item_id: itemId,
+          item_name: itemName,
+        })
       }
     >
       {children}

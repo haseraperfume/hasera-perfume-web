@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "HASERA — Bukan sekadar parfum, tapi sebuah signature",
+    "title": "HASERA: Bukan sekadar parfum, tapi sebuah signature",
     "description": "Temukan parfum signature HASERA: Cleopatra Noir, Georgia Flora, dan Croesus Gold."
   },
   "nav": {
@@ -8,11 +8,16 @@
     "collection": "Koleksi",
     "story": "Cerita kami",
     "ingredients": "Bahan",
+    "values": "Kenapa memilih kami",
     "reviews": "Ulasan",
     "faq": "FAQ",
     "shopNow": "Belanja sekarang",
     "toggleMenu": "Buka menu",
-    "skipToContent": "Langsung ke konten"
+    "skipToContent": "Langsung ke konten",
+    "brandHome": "Beranda Hasera",
+    "primaryNavigation": "Navigasi utama",
+    "mobileNavigation": "Navigasi mobile",
+    "footerNavigation": "Navigasi footer"
   },
   "topbar": {
     "label": "Siap jadikan ini milikmu?",
@@ -53,14 +58,40 @@
     { "title": "Unik & berkesan", "text": "Aroma yang meninggalkan kesan mendalam ke mana pun kamu pergi." },
     { "title": "Dibuat dengan peduli", "text": "Cruelty-free, bersumber etis, dan diproduksi secara bertanggung jawab." }
   ],
+  "ingredients": {
+    "eyebrow": "Bahan yang kami pakai",
+    "title": "Apa yang sebenarnya kamu cium.",
+    "intro": "Setiap racikan HASERA dibangun dari bahan yang bisa kami sebutkan namanya. Ini daftar bahan utama di seluruh koleksi kami.",
+    "items": [
+      { "name": "Bergamot", "text": "Jeruk Italia yang memberi kesegaran di semprotan pertama." },
+      { "name": "Blackcurrant", "text": "Buah beri gelap yang bikin pembukaan terasa tajam dan modern." },
+      { "name": "Lychee", "text": "Manis dan berair, aroma pembuka yang ringan dan ramah." },
+      { "name": "Plum", "text": "Buah matang yang memberi kesan manis hangat sejak awal." },
+      { "name": "Rhubarb", "text": "Sedikit asam dan hijau, penyeimbang aroma manis." },
+      { "name": "Mawar", "text": "Jantung aroma floral klasik yang tidak pernah ketinggalan zaman." },
+      { "name": "Peony", "text": "Floral lembut yang membuat aroma mawar terasa lebih segar." },
+      { "name": "Lavender", "text": "Herbal menenangkan yang memberi sisi dewasa dan bersih." },
+      { "name": "Orange blossom", "text": "Bunga jeruk yang manis lembut, menjembatani segar dan hangat." },
+      { "name": "Honey", "text": "Manis alami yang menempel dan bikin aroma terasa mewah." },
+      { "name": "Hazelnut", "text": "Sentuhan gourmand yang bikin aromanya terasa hangat dan nyaman." },
+      { "name": "Rempah hangat", "text": "Sedikit pedas untuk menahan manis agar tidak berlebihan." },
+      { "name": "Vanilla", "text": "Dasar manis lembut yang paling lama bertahan di kulit." },
+      { "name": "Amber", "text": "Resin hangat yang memberi kedalaman dan daya tahan." },
+      { "name": "Musk", "text": "Aroma bersih seperti kulit sendiri, bikin parfum terasa menyatu." },
+      { "name": "White musk", "text": "Versi musk yang lebih ringan dan bersih untuk aroma floral." },
+      { "name": "Cedarwood", "text": "Kayu kering yang memberi struktur dan kesan tegas." },
+      { "name": "Cashmere wood", "text": "Kayu lembut yang membuat sisa aroma terasa halus." }
+    ]
+  },
   "story": {
     "eyebrow": "Kenapa Hasera",
     "title": "Setiap detail,<br />setiap emosi.",
     "body": "Kami percaya parfum adalah pernyataan pribadi. Setiap tetes dirancang untuk mengangkat kehadiranmu dan menjadi bagian dari identitasmu.",
+    "imageAlt": "Koleksi parfum HASERA: Cleopatra Noir, Georgia Flora, dan Croesus Gold",
     "stats": [
       { "value": "20+", "label": "Bahan<br />premium" },
       { "value": "3", "label": "Aroma<br />signature" },
-      { "value": "12", "label": "Jam<br />tahan lama" },
+      { "value": "6-8", "label": "Jam di<br />kulit" },
       { "value": "100%", "label": "Dibuat<br />dengan cinta" }
     ]
   },
@@ -87,12 +118,243 @@
     "eyebrow": "Perlu diketahui",
     "title": "Pertanyaan yang sering diajukan",
     "items": [
-      { "q": "Apakah parfum HASERA original dan asli?", "a": "Ya. Setiap botol diracik dan disegel langsung oleh HASERA — bukan hasil jual ulang stok pihak ketiga." },
-      { "q": "Berapa lama aromanya bertahan?", "a": "Racikan signature kami dirancang untuk tahan hingga 12 jam di kulit." },
+      { "q": "Apakah parfum HASERA original dan asli?", "a": "Ya. Setiap botol diracik dan disegel langsung oleh HASERA, bukan hasil jual ulang stok pihak ketiga." },
+      { "q": "Berapa lama aromanya bertahan?", "a": "Di kulit biasanya 6-8 jam, tergantung jenis kulit dan aktivitas kamu. Di pakaian aromanya bisa bertahan hingga 12 jam." },
       { "q": "Di mana saya bisa membeli HASERA?", "a": "Kamu bisa pesan langsung via WhatsApp, atau belanja di toko resmi Shopee dan TikTok Shop kami." },
       { "q": "Apakah pengiriman ke seluruh Indonesia?", "a": "Ya, kami mengirim ke seluruh Indonesia melalui mitra Shopee dan TikTok Shop." },
       { "q": "Apakah produk kalian cruelty-free?", "a": "Ya. Semua parfum HASERA cruelty-free dan bersumber secara etis." }
     ]
+  },
+  "pages": {
+    "tentang-kami": {
+      "metaTitle": "Tentang HASERA: Brand Parfum Lokal Indonesia",
+      "metaDescription": "HASERA adalah brand parfum lokal Indonesia. Kami meracik dan menyegel sendiri setiap botol, bukan jual ulang stok pihak ketiga.",
+      "eyebrow": "Tentang kami",
+      "title": "Parfum lokal, dibuat sendiri, bukan jual ulang.",
+      "sections": [
+        {
+          "heading": "Siapa kami",
+          "body": [
+            "HASERA adalah brand parfum lokal Indonesia. Kami membuat parfum untuk orang yang menganggap wewangian bukan pelengkap, tapi bagian dari identitas. Sesuatu yang orang ingat tentang kamu setelah kamu pergi.",
+            "Saat ini kami punya tiga aroma signature: Cleopatra Noir, Georgia Flora, dan Croesus Gold. Setiap aroma punya karakter dan cerita sendiri, bukan variasi dari racikan yang sama."
+          ]
+        },
+        {
+          "heading": "Cara kami bekerja",
+          "body": [
+            "Setiap botol HASERA diracik dan disegel langsung oleh kami. Kami bukan reseller dan tidak menjual ulang stok pihak ketiga. Artinya kami tahu persis apa yang ada di dalam botol yang kamu terima.",
+            "Kami memilih untuk menyebutkan bahan yang kami pakai secara terbuka di halaman koleksi dan di setiap halaman produk. Kamu berhak tahu apa yang kamu semprotkan ke kulitmu setiap hari.",
+            "Semua parfum HASERA cruelty-free dan bahan bakunya bersumber secara etis."
+          ]
+        },
+        {
+          "heading": "Kenapa harganya masuk akal",
+          "body": [
+            "Kami menjual langsung ke kamu lewat WhatsApp, Shopee, dan TikTok Shop. Tanpa gerai fisik, tanpa distributor, tanpa rantai perantara yang menambah harga di setiap langkah.",
+            "Buat kami, parfum yang bagus tidak seharusnya jadi barang yang cuma dipakai di acara khusus. Harga yang wajar berarti kamu bisa memakainya setiap hari."
+          ]
+        },
+        {
+          "heading": "Hubungi kami",
+          "body": [
+            "Cara tercepat menghubungi kami adalah lewat WhatsApp. Kami juga aktif di Instagram dan TikTok, dan toko resmi kami ada di Shopee dan TikTok Shop.",
+            "Kalau kamu punya pertanyaan tentang aroma mana yang cocok untukmu, tanya saja. Kami lebih suka kamu beli aroma yang tepat daripada beli cepat lalu menyesal."
+          ]
+        }
+      ]
+    },
+    "kebijakan-privasi": {
+      "metaTitle": "Kebijakan Privasi",
+      "metaDescription": "Bagaimana HASERA mengumpulkan, memakai, dan melindungi data kamu saat mengunjungi haseraperfume.com.",
+      "eyebrow": "Kebijakan privasi",
+      "title": "Data apa yang kami kumpulkan, dan kenapa.",
+      "sections": [
+        {
+          "heading": "Ringkasnya",
+          "body": [
+            "Kami tidak meminta kamu membuat akun, dan kami tidak punya form pendaftaran di situs ini. Kami tidak menjual data kamu ke siapa pun.",
+            "Situs ini hanya mengumpulkan data statistik kunjungan lewat Google Analytics, dan data apa pun yang kamu kirim sendiri saat menghubungi kami lewat WhatsApp."
+          ]
+        },
+        {
+          "heading": "Google Analytics",
+          "body": [
+            "Kami memakai Google Analytics 4 untuk memahami halaman mana yang dibuka dan tombol mana yang diklik. Data ini dikumpulkan dalam bentuk agregat dan tidak kami pakai untuk mengidentifikasi kamu secara pribadi.",
+            "Google Analytics menyimpan cookie di browser kamu. Kamu bisa menghapus atau memblokirnya lewat pengaturan browser, atau memakai Google Analytics Opt-out Browser Add-on. Situs ini tetap berfungsi normal tanpa cookie tersebut."
+          ]
+        },
+        {
+          "heading": "Saat kamu menghubungi kami",
+          "body": [
+            "Kalau kamu chat lewat WhatsApp, kami menerima nomor dan isi pesan kamu. Kami memakainya hanya untuk menjawab pertanyaan dan memproses pesanan kamu.",
+            "Percakapan WhatsApp tunduk pada kebijakan privasi WhatsApp, bukan hanya kebijakan kami."
+          ]
+        },
+        {
+          "heading": "Layanan pihak ketiga",
+          "body": [
+            "Tombol beli di situs ini mengarahkan kamu ke Shopee dan TikTok Shop. Begitu kamu berpindah ke sana, data kamu diatur oleh kebijakan privasi masing-masing platform, termasuk data pembayaran dan alamat pengiriman. Kami tidak pernah menerima detail pembayaran kamu.",
+            "Situs ini di-hosting oleh Vercel, yang menyimpan log akses standar untuk keperluan operasional dan keamanan."
+          ]
+        },
+        {
+          "heading": "Hak kamu dan cara menghubungi",
+          "body": [
+            "Kamu berhak meminta akses ke data yang kami simpan tentang kamu, meminta koreksi, atau meminta penghapusan. Hubungi kami lewat WhatsApp dan kami akan memprosesnya.",
+            "Kebijakan ini bisa kami perbarui sewaktu-waktu. Perubahan berlaku sejak dipublikasikan di halaman ini."
+          ]
+        }
+      ]
+    },
+    "pengiriman-pengembalian": {
+      "metaTitle": "Pengiriman & Pengembalian",
+      "metaDescription": "Cara memesan parfum HASERA, estimasi pengiriman ke seluruh Indonesia, dan cara mengurus produk yang rusak atau salah kirim.",
+      "eyebrow": "Pengiriman & pengembalian",
+      "title": "Cara pesan, kirim, dan kalau ada masalah.",
+      "sections": [
+        {
+          "heading": "Cara memesan",
+          "body": [
+            "Ada tiga cara: chat langsung lewat WhatsApp, atau belanja di toko resmi kami di Shopee dan TikTok Shop.",
+            "Kalau kamu ingin dibantu memilih aroma, WhatsApp adalah jalur tercepat. Kalau kamu ingin proteksi pembeli dan metode pembayaran yang lengkap, belanja lewat Shopee atau TikTok Shop lebih nyaman."
+          ]
+        },
+        {
+          "heading": "Pengiriman",
+          "body": [
+            "Kami mengirim ke seluruh Indonesia melalui mitra ekspedisi Shopee dan TikTok Shop.",
+            "Estimasi waktu, biaya kirim, dan nomor resi mengikuti sistem marketplace tempat kamu memesan. Setelah pesanan dikirim, kamu bisa melacaknya langsung dari aplikasi Shopee atau TikTok Shop.",
+            "Setiap botol dikirim tersegel. Kalau segel sudah rusak saat paket kamu terima, jangan dipakai. Langsung foto dan hubungi kami."
+          ]
+        },
+        {
+          "heading": "Produk rusak atau salah kirim",
+          "body": [
+            "Kalau produk yang kamu terima rusak, bocor, atau tidak sesuai pesanan, hubungi kami dalam 2x24 jam setelah paket diterima.",
+            "Sertakan video unboxing tanpa jeda kalau ada, atau minimal foto paket, segel, dan botolnya. Ini standar yang dipakai marketplace juga, dan sangat membantu mempercepat proses.",
+            "Untuk pesanan lewat Shopee atau TikTok Shop, ajukan pengembalian lewat aplikasi masing-masing agar prosesnya terlindungi sistem mereka. Kami akan membantu memprosesnya dari sisi kami."
+          ]
+        },
+        {
+          "heading": "Pengembalian karena berubah pikiran",
+          "body": [
+            "Karena parfum adalah produk yang dipakai langsung di kulit, botol yang segelnya sudah dibuka tidak bisa kami terima kembali dengan alasan aromanya kurang cocok.",
+            "Kami sarankan tanya dulu sebelum membeli. Ceritakan aroma yang biasa kamu suka lewat WhatsApp, dan kami bantu arahkan ke aroma yang paling mendekati."
+          ]
+        }
+      ]
+    }
+  },
+  "linktree": {
+    "tagline": "Temukan kami di sini",
+    "navLabel": "Tautan Hasera",
+    "whatsappMessage": "Halo Hasera, saya mau tanya produk.",
+    "labels": {
+      "website": "WEBSITE RESMI",
+      "shopee": "SHOPEE",
+      "tiktok": "TIKTOK",
+      "instagram": "INSTAGRAM",
+      "whatsapp": "WHATSAPP"
+    }
+  },
+  "pdp": {
+    "breadcrumbHome": "Beranda",
+    "breadcrumbCollection": "Koleksi",
+    "notesTitle": "Piramida aroma",
+    "notesTop": "Aroma pembuka",
+    "notesHeart": "Aroma tengah",
+    "notesBase": "Aroma dasar",
+    "specsTitle": "Detail produk",
+    "specSize": "Isi",
+    "specConcentration": "Konsentrasi",
+    "specLongevitySkin": "Ketahanan di kulit",
+    "specLongevityFabric": "Ketahanan di pakaian",
+    "specFamily": "Keluarga aroma",
+    "hours": "jam",
+    "upTo": "Hingga",
+    "priceCompareLabel": "Harga normal",
+    "storyTitle": "Cerita di balik aroma",
+    "faqTitle": "Pertanyaan seputar produk ini",
+    "alsoTitle": "Signature lainnya",
+    "backToCollection": "Lihat semua koleksi",
+    "buyTitle": "Pesan sekarang"
+  },
+  "products": {
+    "cleopatra-noir": {
+      "metaTitle": "Cleopatra Noir: Parfum Vanilla Lavender Tahan Lama",
+      "metaDescription": "Parfum signature HASERA dengan aroma lavender, orange blossom, dan vanilla. Tahan 6-8 jam di kulit, isi 50 ml. Kirim ke seluruh Indonesia.",
+      "scentFamily": "Floral Oriental, Lavender Vanilla",
+      "tagline": "Berani di depan. Lembut di tengah. Dalam di akhir.",
+      "notes": {
+        "top": ["Bergamot", "Blackcurrant"],
+        "heart": ["Lavender", "Orange blossom"],
+        "base": ["Vanilla", "Musk", "Cedarwood"]
+      },
+      "personaName": "Sang Cleopatra",
+      "story": [
+        "Cleopatra tidak menaklukkan dengan pedang. Dia menaklukkan dengan kehadiran: cara dia masuk ruangan, cara dia bicara pelan tapi semua orang diam, cara orang lupa apa yang tadi mau mereka katakan.",
+        "Cleopatra Noir dibuka dengan bergamot dan blackcurrant yang tajam dan segar. Beberapa menit kemudian lavender dan orange blossom masuk, memberi sisi lembut yang tidak kamu duga dari aroma sekuat ini. Yang tertinggal di akhir hari adalah vanilla, musk, dan cedarwood yang hangat, dekat, dan bertahan.",
+        "Kontras itu disengaja. Tegas di awal, lembut di tengah, dalam di akhir, persis seperti orang yang tidak bisa kamu baca dalam lima menit pertama, dan justru karena itu kamu ingat.",
+        "Pakai di hari saat kamu tidak mau jadi orang yang gampang dilupakan."
+      ],
+      "faq": [
+        { "q": "Cleopatra Noir cocok untuk siapa?", "a": "Untuk kamu yang suka aroma manis-hangat dengan karakter kuat. Aromanya feminin tapi tidak manis berlebihan, jadi tetap nyaman dipakai sehari-hari maupun ke acara malam." },
+        { "q": "Kapan waktu terbaik memakai Cleopatra Noir?", "a": "Paling maksimal untuk sore dan malam: dinner, acara spesial, atau kencan. Untuk siang hari, cukup semprot satu sampai dua kali saja." },
+        { "q": "Berapa lama Cleopatra Noir bertahan di kulit?", "a": "Di kulit biasanya 6-8 jam, tergantung jenis kulit dan aktivitas kamu. Di pakaian bisa bertahan hingga 12 jam." },
+        { "q": "Apa bedanya Cleopatra Noir dengan Georgia Flora?", "a": "Cleopatra Noir lebih hangat dan oriental dengan lavender dan vanilla. Georgia Flora lebih segar dan floral dengan mawar dan buah-buahan. Cleopatra untuk kesan berani, Georgia untuk kesan anggun." },
+        { "q": "Apakah cocok untuk cuaca panas Indonesia?", "a": "Cocok, asal takarannya pas. Di cuaca panas aroma manis terbuka lebih cepat, jadi dua semprotan sudah lebih dari cukup." }
+      ]
+    },
+    "georgia-flora": {
+      "metaTitle": "Georgia Flora: Parfum Aroma Mawar Floral Wanita",
+      "metaDescription": "Parfum signature HASERA beraroma mawar, lychee, dan peony dengan dasar musk lembut. Tahan 6-8 jam di kulit, isi 50 ml. Kirim ke seluruh Indonesia.",
+      "scentFamily": "Floral Buah, Mawar",
+      "tagline": "Anggun tanpa harus berusaha keras.",
+      "notes": {
+        "top": ["Lychee", "Rhubarb", "Bergamot"],
+        "heart": ["Mawar", "Peony"],
+        "base": ["Vanilla", "White musk", "Cashmere wood"]
+      },
+      "personaName": "Sang Georgia",
+      "story": [
+        "Ada orang yang terlihat elegan karena berusaha. Ada juga yang elegan karena memang begitu caranya berjalan, duduk, dan menjawab pertanyaan. Georgia tipe yang kedua.",
+        "Georgia Flora dibuka dengan lychee dan rhubarb yang manis, sedikit asam, dan segar seperti udara pagi. Lalu mawar dan peony mengambil alih, dan di titik ini aromanya jadi jelas: ini parfum floral, tanpa ragu. Di dasarnya white musk dan cashmere wood memberi kesan bersih yang menempel sampai malam.",
+        "Ini bukan aroma yang berteriak. Ini aroma yang bikin orang mendekat setengah langkah tanpa sadar kenapa, lalu bertanya kamu pakai parfum apa.",
+        "Untuk hari kerja, untuk kondangan, untuk hari biasa yang ingin kamu buat terasa tidak biasa."
+      ],
+      "faq": [
+        { "q": "Georgia Flora cocok untuk siapa?", "a": "Untuk kamu yang suka aroma floral segar dan tidak terlalu berat. Cocok untuk pemakaian harian, terutama kalau kamu baru mulai mencari parfum signature." },
+        { "q": "Kapan waktu terbaik memakai Georgia Flora?", "a": "Sangat cocok untuk pagi dan siang: ke kantor, kuliah, atau acara outdoor. Tetap enak dipakai malam untuk kesan yang lebih lembut." },
+        { "q": "Apakah aromanya terlalu manis?", "a": "Tidak. Manisnya datang dari lychee di awal, lalu diseimbangkan mawar dan musk. Hasil akhirnya lebih ke bersih dan segar daripada manis." },
+        { "q": "Berapa lama Georgia Flora bertahan di kulit?", "a": "Di kulit biasanya 6-8 jam, dan di pakaian bisa sampai 12 jam. Semprot di titik nadi seperti pergelangan tangan dan leher agar lebih awet." },
+        { "q": "Cocok untuk hadiah?", "a": "Sangat cocok. Aroma floral adalah pilihan paling aman untuk kado karena disukai banyak orang dan tidak terlalu spesifik seleranya." }
+      ]
+    },
+    "croesus-gold": {
+      "metaTitle": "Croesus Gold: Parfum Aroma Manis Amber Tahan Lama",
+      "metaDescription": "Parfum signature HASERA beraroma plum, honey, dan amber woody. Manis, hangat, tahan 6-8 jam di kulit. Isi 50 ml, kirim ke seluruh Indonesia.",
+      "scentFamily": "Gourmand Manis, Amber Woody",
+      "tagline": "Kemenangan tidak perlu berteriak.",
+      "notes": {
+        "top": ["Plum", "Bergamot"],
+        "heart": ["Honey", "Hazelnut", "Rempah hangat"],
+        "base": ["Amber", "Cedarwood", "Vanilla"]
+      },
+      "personaName": "Sang Croesus",
+      "story": [
+        "Di dunia kuno, satu nama jadi ukuran kekayaan: Croesus. Orang tidak bilang \"sekaya raja\". Mereka bilang \"sekaya Croesus\". Namanya berhenti jadi nama, dan berubah jadi standar.",
+        "Croesus Gold dibuat untuk orang yang paham bahwa kemenangan bukan soal siapa yang paling keras bicara. Aroma pembukanya manis dan langsung terasa: plum dan bergamot. Tapi yang tinggal setelah beberapa jam adalah amber, cedarwood, dan vanilla yang hangat, dalam, dan tenang.",
+        "Ini aroma yang bekerja di ruangan penuh orang. Bukan yang minta perhatian, tapi yang bikin orang masih ingat kamu setelah semuanya pulang.",
+        "Pakai saat kamu perlu jadi versi paling yakin dari dirimu sendiri. Wawancara, presentasi, malam yang menentukan. Croesus Gold tidak mengubah kamu jadi orang lain. Dia mempertegas siapa kamu."
+      ],
+      "faq": [
+        { "q": "Croesus Gold untuk pria atau wanita?", "a": "Unisex, tapi karakter manis-hangat dengan dasar amber dan cedarwood membuatnya paling sering dipilih pria. Wanita yang suka aroma gourmand juga cocok memakainya." },
+        { "q": "Kapan waktu terbaik memakai Croesus Gold?", "a": "Paling kuat untuk malam dan acara penting. Untuk siang hari di cuaca panas, kurangi jadi satu sampai dua semprotan." },
+        { "q": "Seberapa kuat aromanya?", "a": "Termasuk kuat dan mudah tercium orang di sekitar. Kalau kamu suka aroma yang lembut dan dekat di kulit, Georgia Flora pilihan yang lebih pas." },
+        { "q": "Berapa lama Croesus Gold bertahan di kulit?", "a": "Di kulit biasanya 6-8 jam, dan di pakaian bisa sampai 12 jam. Dasar amber dan cedarwood-nya membuat sisa aromanya bertahan paling lama di antara koleksi kami." },
+        { "q": "Apakah cocok dipakai ke kantor?", "a": "Bisa, dengan takaran yang lebih sedikit. Satu semprotan sudah cukup untuk ruangan ber-AC agar tidak mengganggu orang di sekitarmu." }
+      ]
+    }
   },
   "footer": {
     "socials": {
@@ -100,6 +362,10 @@
       "tiktok": "TikTok",
       "whatsapp": "WhatsApp"
     },
+    "legalNavigation": "Navigasi informasi",
+    "about": "Tentang kami",
+    "shipping": "Pengiriman & pengembalian",
+    "privacy": "Kebijakan privasi",
     "copyright": "© 2026 HASERA. Hak Cipta Dilindungi."
   }
 }

@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import type { Dictionary, Locale } from "./dictionaries";
+import { trackCtaClick } from "@/lib/gtag";
 
 export default function SiteNav({
   lang,
@@ -11,7 +13,14 @@ export default function SiteNav({
   nav: Dictionary["nav"];
 }) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
   const otherLang: Locale = lang === "en" ? "id" : "en";
+
+  // Swap only the locale segment so /id/cleopatra-noir -> /en/cleopatra-noir
+  // instead of dumping the visitor back to the locale root.
+  const otherLangHref = pathname.startsWith(`/${lang}`)
+    ? `/${otherLang}${pathname.slice(lang.length + 1)}`
+    : `/${otherLang}`;
 
   const links: [string, string][] = [
     ["#home", nav.home],
@@ -33,10 +42,10 @@ export default function SiteNav({
 
   return (
     <header className="nav wrap">
-      <a className="wordmark" href="#home" aria-label="Hasera home">
+      <a className="wordmark" href="#home" aria-label={nav.brandHome}>
         <img src="/images/hasera/hasera-perfume.svg" alt="Hasera" width={140} height={23} />
       </a>
-      <nav className="nav-links" aria-label="Primary navigation">
+      <nav className="nav-links" aria-label={nav.primaryNavigation}>
         {links.map(([href, label]) => (
           <a href={href} key={href}>{label}</a>
         ))}
@@ -44,12 +53,24 @@ export default function SiteNav({
       <div className="nav-actions">
         <a
           className="lang-switch"
-          href={`/${otherLang}`}
+          href={otherLangHref}
+          hrefLang={otherLang}
           aria-label={`Switch to ${otherLang === "en" ? "English" : "Bahasa Indonesia"}`}
+          onClick={() =>
+            trackCtaClick({ channel: "internal", location: "lang_switch" })
+          }
         >
           {otherLang.toUpperCase()}
         </a>
-        <a className="button button-dark nav-button" href="#collection">{nav.shopNow}</a>
+        <a
+          className="button button-dark nav-button"
+          href="#collection"
+          onClick={() =>
+            trackCtaClick({ channel: "internal", location: "nav_shop_now" })
+          }
+        >
+          {nav.shopNow}
+        </a>
         <button
           type="button"
           className={`nav-burger${open ? " open" : ""}`}
@@ -64,12 +85,19 @@ export default function SiteNav({
       <nav
         id="mobile-menu"
         className={`mobile-menu ${open ? "open" : ""}`}
-        aria-label="Mobile navigation"
+        aria-label={nav.mobileNavigation}
       >
         {links.map(([href, label]) => (
           <a href={href} key={href} onClick={() => setOpen(false)}>{label}</a>
         ))}
-        <a href={`/${otherLang}`} onClick={() => setOpen(false)}>
+        <a
+          href={otherLangHref}
+          hrefLang={otherLang}
+          onClick={() => {
+            setOpen(false);
+            trackCtaClick({ channel: "internal", location: "lang_switch_mobile" });
+          }}
+        >
           {otherLang === "en" ? "English" : "Bahasa Indonesia"}
         </a>
       </nav>

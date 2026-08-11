@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "HASERA — A signature, not just perfume",
+    "title": "HASERA: A signature, not just perfume",
     "description": "Discover HASERA signature fragrances: Cleopatra Noir, Georgia Flora and Croesus Gold."
   },
   "nav": {
@@ -8,11 +8,16 @@
     "collection": "Collection",
     "story": "Our story",
     "ingredients": "Ingredients",
+    "values": "Why choose us",
     "reviews": "Reviews",
     "faq": "FAQ",
     "shopNow": "Shop now",
     "toggleMenu": "Toggle menu",
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "brandHome": "Hasera home",
+    "primaryNavigation": "Primary navigation",
+    "mobileNavigation": "Mobile navigation",
+    "footerNavigation": "Footer navigation"
   },
   "topbar": {
     "label": "Ready to make it yours?",
@@ -53,14 +58,40 @@
     { "title": "Unique & memorable", "text": "Scents that leave a lasting impression everywhere you go." },
     { "title": "Made with care", "text": "Cruelty-free, ethically sourced, and crafted responsibly." }
   ],
+  "ingredients": {
+    "eyebrow": "What we use",
+    "title": "What you are actually smelling.",
+    "intro": "Every HASERA blend is built from materials we can name. These are the key ingredients across the collection.",
+    "items": [
+      { "name": "Bergamot", "text": "Italian citrus that carries the freshness of the first spray." },
+      { "name": "Blackcurrant", "text": "A dark berry that keeps the opening sharp and modern." },
+      { "name": "Lychee", "text": "Sweet and juicy, a light and welcoming top note." },
+      { "name": "Plum", "text": "Ripe fruit that brings warm sweetness from the start." },
+      { "name": "Rhubarb", "text": "Slightly tart and green, the counterweight to sweetness." },
+      { "name": "Rose", "text": "The classic floral heart that never dates." },
+      { "name": "Peony", "text": "A soft floral that keeps the rose feeling fresh." },
+      { "name": "Lavender", "text": "A calming herb that adds a clean, grown-up edge." },
+      { "name": "Orange blossom", "text": "Softly sweet citrus flower bridging fresh and warm." },
+      { "name": "Honey", "text": "Natural sweetness that clings and reads as luxurious." },
+      { "name": "Hazelnut", "text": "A gourmand touch that makes the scent warm and comfortable." },
+      { "name": "Warm spice", "text": "A little heat to stop the sweetness going too far." },
+      { "name": "Vanilla", "text": "The soft sweet base that lasts longest on skin." },
+      { "name": "Amber", "text": "Warm resin that adds depth and staying power." },
+      { "name": "Musk", "text": "A clean skin-like note that makes a perfume feel part of you." },
+      { "name": "White musk", "text": "A lighter, cleaner musk for the floral blends." },
+      { "name": "Cedarwood", "text": "Dry wood that gives structure and a firm edge." },
+      { "name": "Cashmere wood", "text": "Soft wood that leaves a smooth dry-down." }
+    ]
+  },
   "story": {
     "eyebrow": "Why Hasera",
     "title": "Every detail,<br />every emotion.",
     "body": "We believe perfume is a personal statement. Every drop is designed to elevate your presence and become a part of your identity.",
+    "imageAlt": "The HASERA perfume collection: Cleopatra Noir, Georgia Flora and Croesus Gold",
     "stats": [
       { "value": "20+", "label": "Premium<br />ingredients" },
       { "value": "3", "label": "Signature<br />scents" },
-      { "value": "12", "label": "Hours<br />lasting" },
+      { "value": "6-8", "label": "Hours on<br />skin" },
       { "value": "100%", "label": "Made<br />with love" }
     ]
   },
@@ -87,12 +118,243 @@
     "eyebrow": "Good to know",
     "title": "Frequently asked questions",
     "items": [
-      { "q": "Are HASERA perfumes original and authentic?", "a": "Yes. Every bottle is crafted and sealed by HASERA — no reselling of third-party stock." },
-      { "q": "How long does the scent last?", "a": "Our signature blends are designed to last up to 12 hours on skin." },
+      { "q": "Are HASERA perfumes original and authentic?", "a": "Yes. Every bottle is crafted and sealed by HASERA, with no reselling of third-party stock." },
+      { "q": "How long does the scent last?", "a": "Typically 6-8 hours on skin, depending on your skin type and activity. On fabric it can hold up to 12 hours." },
       { "q": "Where can I buy HASERA?", "a": "You can order directly via WhatsApp, or shop our official Shopee and TikTok Shop storefronts." },
       { "q": "Do you ship nationwide?", "a": "Yes, we ship across Indonesia through our Shopee and TikTok Shop partners." },
       { "q": "Are your products cruelty-free?", "a": "Yes. All HASERA fragrances are cruelty-free and ethically sourced." }
     ]
+  },
+  "pages": {
+    "tentang-kami": {
+      "metaTitle": "About HASERA: An Indonesian Perfume Brand",
+      "metaDescription": "HASERA is an Indonesian perfume brand. We blend and seal every bottle ourselves, and we do not resell third-party stock.",
+      "eyebrow": "About us",
+      "title": "Made by us, not resold.",
+      "sections": [
+        {
+          "heading": "Who we are",
+          "body": [
+            "HASERA is an Indonesian perfume brand. We make fragrance for people who treat scent as part of their identity rather than an accessory. It is the thing people remember about you after you have left the room.",
+            "We currently make three signature fragrances: Cleopatra Noir, Georgia Flora and Croesus Gold. Each has its own character and story rather than being a variation on one base."
+          ]
+        },
+        {
+          "heading": "How we work",
+          "body": [
+            "Every HASERA bottle is blended and sealed by us. We are not a reseller and we do not sell on third-party stock, which means we know exactly what is in the bottle you receive.",
+            "We list the materials we use openly on the collection page and on every product page. You should know what you are putting on your skin every day.",
+            "All HASERA fragrances are cruelty-free and ethically sourced."
+          ]
+        },
+        {
+          "heading": "Why the price is what it is",
+          "body": [
+            "We sell directly to you through WhatsApp, Shopee and TikTok Shop. No physical store, no distributor, no chain of middlemen adding margin at every step.",
+            "We think good perfume should not be something you save for special occasions. A fair price means you can wear it every day."
+          ]
+        },
+        {
+          "heading": "Get in touch",
+          "body": [
+            "WhatsApp is the fastest way to reach us. We are also on Instagram and TikTok, and our official stores are on Shopee and TikTok Shop.",
+            "If you are not sure which scent suits you, just ask. We would rather you buy the right one than buy quickly and regret it."
+          ]
+        }
+      ]
+    },
+    "kebijakan-privasi": {
+      "metaTitle": "Privacy Policy",
+      "metaDescription": "How HASERA collects, uses and protects your data when you visit haseraperfume.com.",
+      "eyebrow": "Privacy policy",
+      "title": "What we collect, and why.",
+      "sections": [
+        {
+          "heading": "The short version",
+          "body": [
+            "We do not ask you to create an account, and there is no signup form on this site. We do not sell your data to anyone.",
+            "This site collects visit statistics through Google Analytics, plus anything you send us yourself when you get in touch over WhatsApp."
+          ]
+        },
+        {
+          "heading": "Google Analytics",
+          "body": [
+            "We use Google Analytics 4 to understand which pages get opened and which buttons get clicked. This is collected in aggregate and we do not use it to identify you personally.",
+            "Google Analytics stores a cookie in your browser. You can delete or block it in your browser settings, or use the Google Analytics Opt-out Browser Add-on. The site works normally without it."
+          ]
+        },
+        {
+          "heading": "When you contact us",
+          "body": [
+            "If you message us on WhatsApp we receive your number and the contents of your message. We use it only to answer your question and process your order.",
+            "WhatsApp conversations are also governed by WhatsApp's own privacy policy, not just ours."
+          ]
+        },
+        {
+          "heading": "Third-party services",
+          "body": [
+            "The buy buttons on this site send you to Shopee and TikTok Shop. Once you move there your data is governed by each platform's privacy policy, including payment and delivery details. We never receive your payment details.",
+            "This site is hosted by Vercel, which keeps standard access logs for operational and security purposes."
+          ]
+        },
+        {
+          "heading": "Your rights and how to reach us",
+          "body": [
+            "You can ask for access to the data we hold about you, ask for corrections, or ask us to delete it. Message us on WhatsApp and we will handle it.",
+            "We may update this policy from time to time. Changes take effect once published on this page."
+          ]
+        }
+      ]
+    },
+    "pengiriman-pengembalian": {
+      "metaTitle": "Shipping & Returns",
+      "metaDescription": "How to order HASERA perfume, delivery across Indonesia, and what to do if an item arrives damaged or incorrect.",
+      "eyebrow": "Shipping & returns",
+      "title": "Ordering, delivery, and when something goes wrong.",
+      "sections": [
+        {
+          "heading": "How to order",
+          "body": [
+            "Three ways: message us directly on WhatsApp, or shop at our official stores on Shopee and TikTok Shop.",
+            "If you want help choosing a scent, WhatsApp is fastest. If you want buyer protection and a full range of payment methods, Shopee or TikTok Shop is more convenient."
+          ]
+        },
+        {
+          "heading": "Delivery",
+          "body": [
+            "We ship across Indonesia through Shopee and TikTok Shop courier partners.",
+            "Delivery estimates, shipping costs and tracking numbers follow the marketplace you ordered from. Once dispatched you can track the parcel directly in the Shopee or TikTok Shop app.",
+            "Every bottle ships sealed. If the seal is broken when the parcel reaches you, do not use it. Photograph it and contact us straight away."
+          ]
+        },
+        {
+          "heading": "Damaged or incorrect items",
+          "body": [
+            "If what you receive is damaged, leaking, or not what you ordered, contact us within 48 hours of delivery.",
+            "Include an uncut unboxing video if you have one, or at minimum photos of the parcel, the seal and the bottle. This is the same standard the marketplaces use and it speeds things up considerably.",
+            "For orders placed on Shopee or TikTok Shop, file the return through their app so the process stays protected by their system. We will help push it through from our side."
+          ]
+        },
+        {
+          "heading": "Changed your mind",
+          "body": [
+            "Because perfume goes directly onto skin, we cannot accept back a bottle whose seal has been opened simply because the scent was not to your taste.",
+            "Ask before you buy. Tell us on WhatsApp what you normally like and we will point you at the closest match."
+          ]
+        }
+      ]
+    }
+  },
+  "linktree": {
+    "tagline": "Choose where to find us",
+    "navLabel": "Hasera links",
+    "whatsappMessage": "Hi Hasera, I'd like to ask about your products.",
+    "labels": {
+      "website": "OFFICIAL WEBSITE",
+      "shopee": "SHOPEE",
+      "tiktok": "TIKTOK",
+      "instagram": "INSTAGRAM",
+      "whatsapp": "WHATSAPP"
+    }
+  },
+  "pdp": {
+    "breadcrumbHome": "Home",
+    "breadcrumbCollection": "Collection",
+    "notesTitle": "Scent pyramid",
+    "notesTop": "Top notes",
+    "notesHeart": "Heart notes",
+    "notesBase": "Base notes",
+    "specsTitle": "Product details",
+    "specSize": "Volume",
+    "specConcentration": "Concentration",
+    "specLongevitySkin": "Longevity on skin",
+    "specLongevityFabric": "Longevity on fabric",
+    "specFamily": "Scent family",
+    "hours": "hours",
+    "upTo": "Up to",
+    "priceCompareLabel": "Regular price",
+    "storyTitle": "The story behind the scent",
+    "faqTitle": "Questions about this fragrance",
+    "alsoTitle": "Other signatures",
+    "backToCollection": "View the full collection",
+    "buyTitle": "Order now"
+  },
+  "products": {
+    "cleopatra-noir": {
+      "metaTitle": "Cleopatra Noir: Lavender Vanilla Perfume",
+      "metaDescription": "A HASERA signature fragrance of lavender, orange blossom and vanilla. Lasts 6-8 hours on skin, 50 ml. Ships across Indonesia.",
+      "scentFamily": "Floral Oriental, Lavender Vanilla",
+      "tagline": "Bold up front. Soft in the middle. Deep at the end.",
+      "notes": {
+        "top": ["Bergamot", "Blackcurrant"],
+        "heart": ["Lavender", "Orange blossom"],
+        "base": ["Vanilla", "Musk", "Cedarwood"]
+      },
+      "personaName": "The Cleopatra",
+      "story": [
+        "Cleopatra did not conquer with a sword. She conquered with presence: the way she entered a room, the way she spoke quietly and everyone stopped, the way people forgot what they had meant to say.",
+        "Cleopatra Noir opens sharp and fresh with bergamot and blackcurrant. Minutes later lavender and orange blossom move in, bringing a softness you would not expect from something this strong. What stays at the end of the day is vanilla, musk and cedarwood, all warm, close, and lasting.",
+        "The contrast is deliberate. Sharp at the start, soft in the middle, deep at the close, exactly like someone you cannot read in the first five minutes, and remember precisely because of it.",
+        "Wear it on the days you do not intend to be forgotten."
+      ],
+      "faq": [
+        { "q": "Who is Cleopatra Noir for?", "a": "For anyone who likes a warm, sweet scent with real character. It reads feminine without being overly sweet, so it works day to day as well as at night." },
+        { "q": "When is Cleopatra Noir best worn?", "a": "It peaks in the evening: dinners, special occasions, dates. For daytime, one or two sprays is plenty." },
+        { "q": "How long does Cleopatra Noir last?", "a": "Typically 6-8 hours on skin, varying with skin type and activity. On fabric it can hold up to 12 hours." },
+        { "q": "How is it different from Georgia Flora?", "a": "Cleopatra Noir is warmer and more oriental, led by lavender and vanilla. Georgia Flora is fresher and more floral, led by rose and fruit. Cleopatra for bold, Georgia for graceful." },
+        { "q": "Does it work in hot weather?", "a": "Yes, with a lighter hand. Heat opens sweet notes faster, so two sprays is more than enough." }
+      ]
+    },
+    "georgia-flora": {
+      "metaTitle": "Georgia Flora: Rose Floral Perfume for Women",
+      "metaDescription": "A HASERA signature fragrance of rose, lychee and peony over a soft musk base. Lasts 6-8 hours on skin, 50 ml. Ships across Indonesia.",
+      "scentFamily": "Fruity Floral, Rose",
+      "tagline": "Elegant without trying to be.",
+      "notes": {
+        "top": ["Lychee", "Rhubarb", "Bergamot"],
+        "heart": ["Rose", "Peony"],
+        "base": ["Vanilla", "White musk", "Cashmere wood"]
+      },
+      "personaName": "The Georgia",
+      "story": [
+        "Some people look elegant because they work at it. Others are elegant simply in how they walk, sit, and answer a question. Georgia is the second kind.",
+        "Georgia Flora opens with lychee and rhubarb that are sweet, faintly tart, and fresh as early morning air. Then rose and peony take over, and at that point it is unmistakable: this is a floral, without hesitation. Underneath, white musk and cashmere wood leave a clean trail that holds into the evening.",
+        "This is not a scent that shouts. It is the one that makes people lean half a step closer without knowing why, and then ask what you are wearing.",
+        "For workdays, for weddings, for ordinary days you would like to feel less ordinary."
+      ],
+      "faq": [
+        { "q": "Who is Georgia Flora for?", "a": "For anyone who likes fresh florals that are not too heavy. It suits daily wear, especially if you are still looking for your signature scent." },
+        { "q": "When is Georgia Flora best worn?", "a": "Excellent for morning and daytime: the office, campus, outdoor events. It still works at night for a softer impression." },
+        { "q": "Is it too sweet?", "a": "No. The sweetness comes from lychee up front, then rose and musk balance it out. The result reads clean and fresh rather than sugary." },
+        { "q": "How long does Georgia Flora last?", "a": "Typically 6-8 hours on skin, and up to 12 hours on fabric. Spray on pulse points such as wrists and neck to get the most from it." },
+        { "q": "Is it a good gift?", "a": "Very much so. Florals are the safest choice for a gift because they appeal broadly and are not tied to a narrow taste." }
+      ]
+    },
+    "croesus-gold": {
+      "metaTitle": "Croesus Gold: Sweet Amber Woody Perfume",
+      "metaDescription": "A HASERA signature fragrance of plum, honey and amber woods. Sweet, warm, lasts 6-8 hours on skin. 50 ml, ships across Indonesia.",
+      "scentFamily": "Sweet Gourmand, Amber Woody",
+      "tagline": "Winning does not need to shout.",
+      "notes": {
+        "top": ["Plum", "Bergamot"],
+        "heart": ["Honey", "Hazelnut", "Warm spice"],
+        "base": ["Amber", "Cedarwood", "Vanilla"]
+      },
+      "personaName": "The Croesus",
+      "story": [
+        "In the ancient world one name became the measure of wealth: Croesus. People did not say \"as rich as a king\". They said \"as rich as Croesus\". The name stopped being a name and became a standard.",
+        "Croesus Gold is built for people who understand that winning is not about who speaks loudest. It opens sweet and immediate: plum and bergamot. But what remains hours later is amber, cedarwood and vanilla, all warm, deep, and unhurried.",
+        "This is a scent that works in a crowded room. Not the one demanding attention, but the one people still remember after everyone has gone home.",
+        "Wear it when you need to be the most certain version of yourself. The interview, the pitch, the night that decides something. Croesus Gold does not turn you into someone else. It sharpens who you already are."
+      ],
+      "faq": [
+        { "q": "Is Croesus Gold for men or women?", "a": "Unisex, though its sweet-warm character over amber and cedarwood means men choose it most often. Women who love gourmand scents wear it just as well." },
+        { "q": "When is Croesus Gold best worn?", "a": "Strongest at night and for occasions that matter. In hot daytime weather, drop to one or two sprays." },
+        { "q": "How strong is it?", "a": "Strong, and easily noticed by people nearby. If you prefer something soft and close to the skin, Georgia Flora is the better fit." },
+        { "q": "How long does Croesus Gold last?", "a": "Typically 6-8 hours on skin, and up to 12 hours on fabric. Its amber and cedarwood base gives it the longest dry-down in our collection." },
+        { "q": "Can I wear it to the office?", "a": "Yes, with a lighter hand. One spray is enough in an air-conditioned room so it does not overwhelm the people around you." }
+      ]
+    }
   },
   "footer": {
     "socials": {
@@ -100,6 +362,10 @@
       "tiktok": "TikTok",
       "whatsapp": "WhatsApp"
     },
+    "legalNavigation": "Information navigation",
+    "about": "About us",
+    "shipping": "Shipping & returns",
+    "privacy": "Privacy policy",
     "copyright": "© 2026 HASERA. All Rights Reserved."
   }
 }
