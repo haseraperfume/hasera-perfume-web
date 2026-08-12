@@ -6,9 +6,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      // Linktree duplicates the homepage's outbound links and adds no unique
-      // content, keep it crawlable for humans, out of the index.
-      disallow: ["/api/", "/*/links"],
+      disallow: ["/api/"],
     },
     sitemap: absoluteUrl("/sitemap.xml"),
     host: SITE_URL,
